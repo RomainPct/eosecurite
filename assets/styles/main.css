@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700");
+body, html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  background-color: #F9F9FC;
+  color: #120C06;
+  font-family: "Muli", sans-serif;
+  font-size: 16px; }

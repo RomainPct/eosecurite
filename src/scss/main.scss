@@ -9,8 +9,10 @@ body, html {
 }
 body {
   margin: 0;
+  padding-top: 100px;
   background-color: $background-color;
   color: $text-color;
   font-family: $font-primary;
   font-size: $font-size-body;
 }
+

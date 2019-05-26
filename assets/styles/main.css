@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:400,700");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700");
 nav {
   display: flex;
   padding: 20px 40px;
@@ -24,12 +24,22 @@ nav {
         text-decoration: none;
         color: #120C06; }
 
+a.primaryButton {
+  display: inline-block;
+  position: relative; }
+
+a.primaryButton::after {
+  position: absolute;
+  content: " ";
+  border: red; }
+
 body, html {
   height: 100%; }
 
 body {
   margin: 0;
-  background-color: #F9F9FC;
+  padding-top: 100px;
+  background-color: #FDFDFD;
   color: #120C06;
-  font-family: "Muli", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 16px; }

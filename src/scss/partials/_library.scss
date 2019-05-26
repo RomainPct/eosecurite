@@ -1,0 +1,11 @@
+a.primaryButton{
+    $font-primary: 'Titillium Web', sans-serif;
+    display: inline-block;
+    position: relative;
+    
+}
+a.primaryButton::after{
+    position: absolute;
+    content:" ";
+    border: red;
+}

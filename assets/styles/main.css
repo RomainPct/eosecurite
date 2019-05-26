@@ -24,6 +24,20 @@ nav {
         text-decoration: none;
         color: #120C06; }
 
+#footer_container {
+  background-color: #525151;
+  height: 10vw;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  #footer_container #footer_subContainer {
+    display: flex; }
+    #footer_container #footer_subContainer #footer_subContainerLeft {
+      width: 50%; }
+      #footer_container #footer_subContainer #footer_subContainerLeft img {
+        width: 2vw;
+        height: auto; }
+
 a.primaryButton {
   font: "Titillium Web", sans-serif;
   display: inline-block;

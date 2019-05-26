@@ -1,0 +1,19 @@
+#footer_container{
+    background-color: $background-color-dark;
+    height: 10vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    #footer_subContainer{
+        display: flex;
+        #footer_subContainerLeft{
+            width: 50%;
+            
+            img{
+                width: 2vw;
+                height: auto;
+            }
+        }
+
+    }
+}

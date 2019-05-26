@@ -18,6 +18,7 @@
             justify-content: space-around;
             left: 4vw;
             right: 4vw;
+            width: 50%;
             img{
                 width: 100px;
                 height: 100px;
@@ -47,6 +48,9 @@
         }
         #footer_map{
             right: 0;
+            iframe{
+
+            }
         }
 
     }

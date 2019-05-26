@@ -4,12 +4,13 @@
     left: 0;
     right: 0;
     bottom: 0;
+    padding: 20px;
+
     #footer_subContainer{
         display: flex;
         flex-direction: row;
 
-        padding-top: 2%;
-        padding-bottom: 2%;
+
 
         #footer_subContainerLeft{
             display: flex;
@@ -18,14 +19,16 @@
             left: 4vw;
             right: 4vw;
             img{
-                width: 140px;
-                height: auto;
+                width: 100px;
+                height: 100px;
             }
             #footer_links{
                 ul{
                     list-style: none;
                     color: $background-color;
                     text-decoration: none;
+                    display: flex;
+                    justify-content: space-around;
                     a{
                         color: $background-color;
                          text-decoration: none;
@@ -34,10 +37,16 @@
                 }
             }
             #footer_facebook{
+                width: 3vw;
+                height: auto;
                 iframe{
                     margin-right: 2%;
+                    height: 120px;
                 }
             }
+        }
+        #footer_map{
+            right: 0;
         }
 
     }

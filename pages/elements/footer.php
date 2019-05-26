@@ -11,7 +11,8 @@
               </ul>
          </div>
          <div id="footer_facebook">
-         <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=60&layout=box_count&action=like&size=large&show_faces=true&share=true&height=65&appId" width="60" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+         
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=77&layout=box_count&action=like&size=large&show_faces=false&share=true&height=65&appId" width="77" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
          </div>
     </div>
     <div id="footer_map">

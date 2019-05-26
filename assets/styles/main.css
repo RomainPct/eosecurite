@@ -26,33 +26,29 @@ nav {
 
 #footer_container {
   background-color: #120C06;
-  height: 15vw;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-  #footer_container #footer_subContainer {
-    display: flex;
-    flex-direction: row;
-    padding-top: 2%;
-    padding-bottom: 2%; }
-    #footer_container #footer_subContainer #footer_subContainerLeft {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      left: 4vw;
-      right: 4vw; }
-      #footer_container #footer_subContainer #footer_subContainerLeft img {
-        width: 140px;
-        height: auto; }
-      #footer_container #footer_subContainer #footer_subContainerLeft #footer_links ul {
-        list-style: none;
-        color: #FDFDFD;
-        text-decoration: none; }
-        #footer_container #footer_subContainer #footer_subContainerLeft #footer_links ul a {
-          color: #FDFDFD;
-          text-decoration: none; }
-      #footer_container #footer_subContainer #footer_subContainerLeft #footer_facebook iframe {
-        margin-right: 2%; }
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #footer_container img {
+    width: 100px;
+    height: 100px; }
+  #footer_container #footer_links ul {
+    list-style: none;
+    color: #FDFDFD;
+    text-decoration: none; }
+    #footer_container #footer_links ul a {
+      color: #FDFDFD;
+      text-decoration: none; }
+  #footer_container #footer_facebook {
+    width: 3vw;
+    height: auto; }
+    #footer_container #footer_facebook iframe {
+      margin-right: 2%;
+      height: 120px; }
+  #footer_container #footer_map {
+    height: 100%;
+    width: 30vw; }
 
 a.primaryButton {
   font: "Titillium Web", sans-serif;

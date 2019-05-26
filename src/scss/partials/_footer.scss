@@ -1,13 +1,10 @@
 #footer_container{
     background-color: $text-color;
-    padding: 20px;
+    padding: 26px 42px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-            img{
-                width: 100px;
-                height: 100px;
-            }
+
             #footer_links{
                 ul{
                     list-style: none;
@@ -20,14 +17,9 @@
 
                 }
             }
-            #footer_facebook{
-                width: 3vw;
-                height: auto;
-                iframe{
-                    margin-right: 2%;
-                    height: 120px;
-                }
-            }
+        #footer_facebook{
+            height: 100%;
+        }
         #footer_map{
             height: 100%;
             width: 30vw;

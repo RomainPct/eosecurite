@@ -26,13 +26,10 @@ nav {
 
 #footer_container {
   background-color: #120C06;
-  padding: 20px;
+  padding: 26px 42px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  #footer_container img {
-    width: 100px;
-    height: 100px; }
   #footer_container #footer_links ul {
     list-style: none;
     color: #FDFDFD;
@@ -41,11 +38,7 @@ nav {
       color: #FDFDFD;
       text-decoration: none; }
   #footer_container #footer_facebook {
-    width: 3vw;
-    height: auto; }
-    #footer_container #footer_facebook iframe {
-      margin-right: 2%;
-      height: 120px; }
+    height: 100%; }
   #footer_container #footer_map {
     height: 100%;
     width: 30vw; }

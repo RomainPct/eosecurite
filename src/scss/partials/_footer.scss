@@ -1,0 +1,36 @@
+#footer_container{
+    background-color: $text-color;
+    height: 15vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    #footer_subContainer{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-right: 5%;
+        #footer_subContainerLeft{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 20vw;
+            img{
+                width: 140px;
+                height: auto;
+            }
+            #footer_links{
+                ul{
+                    list-style: none;
+                    color: $background-color;
+                    text-decoration: none;
+                    a{
+                        color: $background-color;
+                         text-decoration: none;
+                    }
+
+                }
+            }
+        }
+
+    }
+}

@@ -24,6 +24,33 @@ nav {
         text-decoration: none;
         color: #120C06; }
 
+#footer_container {
+  background-color: #120C06;
+  height: 15vw;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  #footer_container #footer_subContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%; }
+    #footer_container #footer_subContainer #footer_subContainerLeft {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 20vw; }
+      #footer_container #footer_subContainer #footer_subContainerLeft img {
+        width: 140px;
+        height: auto; }
+      #footer_container #footer_subContainer #footer_subContainerLeft #footer_links ul {
+        list-style: none;
+        color: #FDFDFD;
+        text-decoration: none; }
+        #footer_container #footer_subContainer #footer_subContainerLeft #footer_links ul a {
+          color: #FDFDFD;
+          text-decoration: none; }
+
 a.primaryButton {
   font: "Titillium Web", sans-serif;
   font-weight: bold;

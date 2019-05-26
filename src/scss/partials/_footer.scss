@@ -7,13 +7,16 @@
     #footer_subContainer{
         display: flex;
         flex-direction: row;
-        margin-left: 5%;
-        margin-right: 5%;
+
+        padding-top: 2%;
+        padding-bottom: 2%;
+
         #footer_subContainerLeft{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            width: 60%;
+            left: 4vw;
+            right: 4vw;
             img{
                 width: 140px;
                 height: auto;

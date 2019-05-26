@@ -1,3 +1,4 @@
+//PRIMARY BUTTON
 a.primaryButton{
     font: $font-primary;
     font-weight: bold;
@@ -29,4 +30,33 @@ a.primaryButton:hover::after{
 a.primaryButton,.disable{
     opacity: 0,5;
     
+}
+
+//H1
+
+h1{
+    font: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+//H2 & H3
+
+h2,h3{
+    font: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+//CORPS & CORPS SECONDAIRE
+
+p.primaryText{
+    font: 'Titillium Regular', sans-serif;
+    font-size: 16px;
+}
+
+p.secondaryText{
+    font: 'Titillium Regular', sans-serif;
+    font-size: 16px;
+    opacity: 0,85;
 }

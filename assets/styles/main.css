@@ -39,7 +39,7 @@ nav {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      width: 20vw; }
+      width: 60%; }
       #footer_container #footer_subContainer #footer_subContainerLeft img {
         width: 140px;
         height: auto; }
@@ -50,6 +50,8 @@ nav {
         #footer_container #footer_subContainer #footer_subContainerLeft #footer_links ul a {
           color: #FDFDFD;
           text-decoration: none; }
+      #footer_container #footer_subContainer #footer_subContainerLeft #footer_facebook iframe {
+        margin-right: 2%; }
 
 a.primaryButton {
   font: "Titillium Web", sans-serif;
@@ -76,6 +78,25 @@ a.primaryButton:hover::after {
 
 a.primaryButton, .disable {
   opacity: 0,5; }
+
+h1 {
+  font: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size: 26px; }
+
+h2, h3 {
+  font: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size: 16px; }
+
+p.primaryText {
+  font: 'Titillium Regular', sans-serif;
+  font-size: 16px; }
+
+p.secondaryText {
+  font: 'Titillium Regular', sans-serif;
+  font-size: 16px;
+  opacity: 0,85; }
 
 body, html {
   height: 100%; }

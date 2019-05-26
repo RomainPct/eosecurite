@@ -1,6 +1,6 @@
 #footer_container{
-    background-color: $background-color-dark;
-    height: 15%;
+    background-color: $text-color;
+    height: 15vw;
     left: 0;
     right: 0;
     bottom: 0;
@@ -13,14 +13,20 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            width: 20vw;
             img{
-                width: 4vw;
+                width: 140px;
                 height: auto;
             }
             #footer_links{
                 ul{
                     list-style: none;
-                    color: $text-color;
+                    color: $background-color;
+                    text-decoration: none;
+                    a{
+                        color: $background-color;
+                         text-decoration: none;
+                    }
 
                 }
             }

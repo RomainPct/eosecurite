@@ -1,17 +1,28 @@
 #footer_container{
     background-color: $background-color-dark;
-    height: 10vw;
+    height: 15%;
     left: 0;
     right: 0;
     bottom: 0;
     #footer_subContainer{
         display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        margin-right: 5%;
         #footer_subContainerLeft{
-            width: 50%;
-            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
             img{
-                width: 2vw;
+                width: 4vw;
                 height: auto;
+            }
+            #footer_links{
+                ul{
+                    list-style: none;
+                    color: $text-color;
+
+                }
             }
         }
 

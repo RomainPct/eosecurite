@@ -1,5 +1,5 @@
 a.primaryButton{
-    $font-primary: 'Titillium Web', sans-serif;
+    font: $font-primary;
     display: inline-block;
     position: relative;
     
@@ -7,5 +7,7 @@ a.primaryButton{
 a.primaryButton::after{
     position: absolute;
     content:" ";
-    border: red;
+    width: 100%;
+    height: 10px;
+    background-color: #000;
 }

@@ -4,25 +4,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+ 
             #footer_links{
                 ul{
                     list-style: none;
                     color: $background-color;
                     text-decoration: none;
+                    margin: 0;
+                    padding: 0;
+
                     a{
                         color: $background-color;
                          text-decoration: none;
+                         padding: 8px 0;
                     }
 
                 }
             }
         #footer_facebook{
-            height: 100%;
+
         }
         #footer_map{
             height: 100%;
-            width: 30vw;
+            width: 40vw;
             
         }
 }

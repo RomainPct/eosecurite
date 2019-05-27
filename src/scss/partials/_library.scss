@@ -16,15 +16,15 @@ a.primaryButton::after{
     content:" ";
     width: 100%;
     height: 10px;
-    top: 65%;
-    left: 6%;
+    bottom: -5px;
+    left: 10px;
     background-color: $color-primary;
-    transition: 0,8s;
+    transition: 0.2s all;
 }
 
 a.primaryButton:hover::after{
-    top: 65%;
-    left: 0%;
+    bottom: -8px;
+    left: 0;
 }
 
 a.primaryButton.disable{

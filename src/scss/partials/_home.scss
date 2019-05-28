@@ -42,10 +42,30 @@
         margin-right: 188px;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         &__bloc{
             background-color: $background-color-dark;
             width: 31vw;
-            height: 21vw;
+            margin-bottom: 110px;
+            &__smallPicture{
+                height: 12vw;
+                width: 31vw;
+                background-color: #EAEAEA;
+            }
+            h3{
+                margin-top: 26px;
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+            p{
+                max-width: 28vw;
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+            a{
+                margin-left: 185px;
+                margin-bottom: 28px;
+            }
         }
     }
 }

@@ -29,10 +29,23 @@
             margin-right: 110px;
             display: flex;
             align-items: flex-end;
+            
             flex-direction: column;
             p{
                 max-width: 25vw;
             }
+        }
+    }
+    &__lastLine{
+        margin-top: 126px;
+        margin-left: 188px;
+        margin-right: 188px;
+        display: flex;
+        flex-direction: row;
+        &__bloc{
+            background-color: $background-color-dark;
+            width: 31vw;
+            height: 21vw;
         }
     }
 }

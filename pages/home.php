@@ -18,4 +18,15 @@
         </div>
     </div>
 
+    <div class="containerHome__lastLine">
+        <div class="containerHome__lastLine__bloc">
+            <h3>Nos produits</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore repellat quos magni quo quod natus porro sequi, neque voluptatibus illo assumenda voluptate. Non accusantium sint sed maxime quibusdam quaerat hic?</p>
+        </div>
+        <div class="containerHome__lastLine__bloc">
+        <h3>Nos formations</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore repellat quos magni quo quod natus porro sequi, neque voluptatibus illo assumenda voluptate. Non accusantium sint sed maxime quibusdam quaerat hic?</p>
+        </div>
+    </div>
+
 </main>

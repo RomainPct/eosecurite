@@ -1,0 +1,38 @@
+.containerHome{
+    background-image: url("../../../assets/images/vagues/vague_accueil.svg");
+    background-position: center 5vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    &__line{
+        margin-top: 110px;
+        margin-left: 110px;
+        margin-right: 110px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &__bigPicture{
+            height: 28vw;
+            width: 45vw;
+            background-color: #EAEAEA;
+        }
+        &__textJustifyLeft{
+            flex: 3;
+            margin-left: 110px;
+            p{
+                max-width: 25vw;
+            }
+        }
+        &__textJustifyRight{
+            text-align: right;
+            flex: 3;
+            margin-right: 110px;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            p{
+                max-width: 25vw;
+            }
+        }
+    }
+}

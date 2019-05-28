@@ -38,14 +38,20 @@ a.primaryButton.disable{
 //H1
 
 h1{
+    display: none;
+}
+
+//H2
+
+h2{
     font: $font-primary;
     font-weight: bold;
     font-size: $font-size-title;
 }
 
-//H2 & H3
+//H3
 
-h2,h3{
+h3{
     font: $font-primary;
     font-weight: bold;
     font-size: $font-size-body;

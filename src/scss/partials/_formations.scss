@@ -1,25 +1,31 @@
-.container_trainings{
-    display: flex;
-    justify-content: space-around;
-   // margin: 142px 118px 0px 200px; 
-    .trainings{
+.containerFormations{
+    background-image: url("../../../assets/images/vagues/vague_formations.svg");
+    background-position: center 0vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 110px;
+    &__containerTrainings{
+        margin: 142px 110px;
+        display: flex;
+        justify-content: space-around;
+        &__trainings{
+            width: 40vw;
+            &__characteristics{
+                width: 25vw;
+                background-color: $background-color-dark;
+            }
+        }
     }
-
 }
 
-.wave_img{
-    // url background image
-}
-
-.container_cards{
+.containerCards{
     display: flex;
     justify-content: space-around;
-    .cards_training{
+    margin: 68px 110px 0px 110px;
+    &__cardsTraining{
+        width: 23vw;
         background-color: $background-color-dark;
         margin: 0px 13px;
-        h1, p{
-            color: #FFF;
-        }
     }
 
 }

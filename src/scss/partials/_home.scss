@@ -1,5 +1,24 @@
-.big {
-    &__image {
-        
-    }
+.containerHome{
+
+}
+
+.containerHome__line{
+    margin-top: 110px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerHome__line__bigPicture{
+    height: 28vw;
+    width: 45vw;
+    background-color: #EAEAEA;
+}
+
+.containerHome__line__text{
+    flex: 3;
+    margin-left: 110px;
 }

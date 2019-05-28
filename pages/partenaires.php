@@ -40,5 +40,10 @@
             <h4>Eratum</h4>
         </div>
     </section>
-    <section id="part__partners"></section>
+    <section id="part__partners">
+
+    </section>
+    <section id="part__contact">
+        <h3>Prendre contact avec EO Sécurité</h3>
+    </section>
 </main>

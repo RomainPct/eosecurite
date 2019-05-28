@@ -1,0 +1,25 @@
+.container_trainings{
+    display: flex;
+    justify-content: space-around;
+   // margin: 142px 118px 0px 200px; 
+    .trainings{
+    }
+
+}
+
+.wave_img{
+    // url background image
+}
+
+.container_cards{
+    display: flex;
+    justify-content: space-around;
+    .cards_training{
+        background-color: $background-color-dark;
+        margin: 0px 13px;
+        h1, p{
+            color: #FFF;
+        }
+    }
+
+}

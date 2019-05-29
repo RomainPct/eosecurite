@@ -14,21 +14,27 @@
 
     <div class="containerCards">
         <div class= "containerCards__cardsTraining">
-            <div class="containerCards__cardsTraining__img"></div>
-            <h2 class="white">Formation 1</h2>
-            <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
+            <div class="containerCards__cardsTraining__imgFormations"></div>
+            <div class="containerCards__cardsTraining__contentFormations">
+                <h2 class="white">Formation 1</h2>
+                <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
+            </div>
             <!--Bouton "En savoir plus"-->
         </div>
         <div class= "containerCards__cardsTraining">
-            <div class="containerCards__cardsTraining__img"></div>
-            <h2 class="white">Formation 2</h2>
-            <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
+            <div class="containerCards__cardsTraining__imgFormations"></div>
+            <div class="containerCards__cardsTraining__contentFormations">
+                <h2 class="white">Formation 2</h2>
+                <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
+            </div>
             <!--Bouton "En savoir plus"-->
         </div>
         <div class= "containerCards__cardsTraining">
-            <div class="containerCards__cardsTraining__img"></div>
-            <h2 class="white">Formation 3</h2>
-            <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
+            <div class="containerCards__cardsTraining__imgFormations"></div>
+            <div class="containerCards__cardsTraining__contentFormations">
+                <h2 class="white">Formation 3</h2>
+                <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
+            </div>
             <!--Bouton "En savoir plus"-->
         </div>
     </div>

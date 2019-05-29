@@ -62,15 +62,12 @@
                 margin-left: 16px;
                 margin-right: 16px;
             }
-            a#left{
-                margin-left: 182px;
-                margin-bottom: 28px;
-                color: white;
-            }
-            a#right{
-                margin-left: 173px;
-                margin-bottom: 28px;
-                color: white;
+            &__buttonContainer{
+                text-align: center;
+                a{
+                    margin-bottom: 28px;
+                    color: white;
+                }
             }
         }
     }

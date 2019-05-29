@@ -1,6 +1,6 @@
 .containerFormations{
     background-image: url("../../../assets/images/vagues/vague_formations.svg");
-    background-position: center 0vh;
+    background-position: center 10vh;
     background-size: 100% auto;
     background-repeat: no-repeat;
     padding-bottom: 110px;
@@ -26,6 +26,12 @@
         width: 23vw;
         background-color: $background-color-dark;
         margin: 0px 13px;
+        &__img{
+            height: 20vw;
+            top: 0;
+            background-color: #EAEAEA;
+            transform: translate(-26px, -16px)
+        }
     }
 
 }

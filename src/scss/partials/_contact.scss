@@ -8,16 +8,15 @@
         display: flex;
 
         &__leftdiv{
-            margin-left: 110px;
+            margin-left: 135px;
             width: 50%;
             padding: 10px;
             background: $background-color-dark;
             color: #FDFDFD;
-            position: relative;
 
             &__map{
-                width: 100%;
-                position: absolute;
+                width: 450px;
+                height: 280px;
             }
         }
 

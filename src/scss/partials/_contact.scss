@@ -1,0 +1,19 @@
+.contactContainer{
+    background-image: url(../../../assets/images/vagues/vague_contact.svg);
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    &__section{
+        display: flex;
+        &__leftdiv{
+            margin-left: 110px;
+            width: 50%;
+            background: $background-color-dark;
+        }
+        &__rightdiv{
+            margin-right: 110px;
+            width: 50%;
+        }
+    }
+}
+

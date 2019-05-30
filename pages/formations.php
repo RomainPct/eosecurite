@@ -19,8 +19,8 @@
                 <h3 class="white">Formation 1</h3>
                 <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
             </div>
-            <div class="containerCards_cardsTraining_buttonFormations">
-                <a class="primaryButton" href="../formation" type="button" title="Bouton formations">En savoir plus</a>
+            <div class="containerCards__cardsTraining__buttonFormations">
+                <a class="primaryButton" href="../formation" title="Bouton formations">En savoir plus</a>
             </div>
         </div>
         <div class= "containerCards__cardsTraining">
@@ -29,8 +29,8 @@
                 <h3 class="white">Formation 2</h3>
                 <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
             </div>
-            <div class="containerCards_cardsTraining_buttonFormations">
-                <a class="primaryButton" href="../formation" type="button" title="Bouton formations">En savoir plus</a>
+            <div class="containerCards__cardsTraining__buttonFormations">
+                <a class="primaryButton" href="../formation" title="Bouton formations">En savoir plus</a>
             </div>
         </div>
         <div class= "containerCards__cardsTraining">
@@ -39,8 +39,8 @@
                 <h3 class="white">Formation 3</h3>
                 <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
             </div>
-            <div class="containerCards_cardsTraining_buttonFormations">
-                <a class="primaryButton white" href="../formation" type="button" title="Bouton formations">En savoir plus</a>
+            <div class="containerCards__cardsTraining__buttonFormations">
+                <a class="primaryButton" href="../formation" title="Bouton formations">En savoir plus</a>
             </div>
         </div>
     </div>

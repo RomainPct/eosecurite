@@ -34,16 +34,17 @@
             height: 20vw;
             top: 0;
             background-color: #EAEAEA;
-            transform: translate(-26px, -16px)
+            transform: translate(-26px, -16px);
         }
         &__contentFormations{
             padding: 16px;
         }
         &__buttonFormations{
-           // color: #FFF;
-            width: 96vh;
-            padding-bottom: 28px;
-            display: inline-block;
+            text-align: center;
+            a{
+                margin-bottom: 28px;
+                color: #FFF;
+            }
         }
     }
 

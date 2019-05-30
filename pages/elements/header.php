@@ -4,6 +4,6 @@
         <li><a href="/home" title="Accueil">L'entreprise</a></li>
         <li><a href="/produits" title="Produits EO sécurité">Nos produits</a></li>
         <li><a href="/formations" title="Formations EO sécurité">Nos formations</a></li>
-        <li><a href="/contact" title="Contact EO sécurité">Contact</a></li>
+        <li><a  class= "primaryButton" href="/contact" title="Contact EO sécurité">Contact</a></li>
     </ul>
 </nav>

@@ -7,7 +7,6 @@ a.primaryButton{
     position: relative;
     text-decoration: none;
     z-index: 35;
-    
 }
 
 a.primaryButton::after{
@@ -47,6 +46,8 @@ h2{
     font: $font-primary;
     font-weight: bold;
     font-size: $font-size-title;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 //H3
@@ -56,11 +57,13 @@ h3{
     font-weight: bold;
     font-size: $font-size-body;
     color: $text-color;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 //CORPS & CORPS SECONDAIRE
 
-p.primaryText{
+p{
     font: $font-primary;
     font-size: $font-size-body;
     color: $text-color;

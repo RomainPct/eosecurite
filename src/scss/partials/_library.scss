@@ -79,3 +79,12 @@ p.secondaryText{
     margin: 0;
     margin-bottom: 16px;
 }
+
+p.secondaryTextWhite{
+    font: $font-primary;
+    font-size: $font-size-body;
+    opacity: 0,85;
+    color: $text-color-white;
+    margin: 0;
+    margin-bottom: 16px;
+}

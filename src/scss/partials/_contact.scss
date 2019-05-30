@@ -3,13 +3,24 @@
     background-position: center bottom;
     background-size: 100% auto;
     background-repeat: no-repeat;
+
     &__section{
         display: flex;
+
         &__leftdiv{
             margin-left: 110px;
             width: 50%;
+            padding: 10px;
             background: $background-color-dark;
+            color: #FDFDFD;
+            position: relative;
+
+            &__map{
+                width: 100%;
+                position: absolute;
+            }
         }
+
         &__rightdiv{
             margin-right: 110px;
             width: 50%;

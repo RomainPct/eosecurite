@@ -61,6 +61,15 @@ h3{
     margin-bottom: 10px;
 }
 
+h3.white{
+    font: $font-primary;
+    font-weight: bold;
+    font-size: $font-size-body;
+    color: $text-color-white;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 //CORPS & CORPS SECONDAIRE
 
 p{

@@ -6,23 +6,22 @@
 
     &__section{
         display: flex;
+        padding: 42px 110px;
+        justify-content: space-between;
 
         &__leftdiv{
-            margin-left: 135px;
-            width: 50%;
-            padding: 10px;
+            width: 45%;
             background: $background-color-dark;
             color: #FDFDFD;
 
             &__map{
-                width: 450px;
-                height: 280px;
+                width: 100%;
+                height: 20vw;
             }
         }
 
         &__rightdiv{
-            margin-right: 110px;
-            width: 50%;
+            width: 45%;
         }
     }
 }

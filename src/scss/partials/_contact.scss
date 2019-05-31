@@ -8,15 +8,20 @@
         display: flex;
         padding: 42px 110px;
         justify-content: space-between;
-
+        align-items: center;
+       
         &__leftdiv{
             width: 45%;
             background: $background-color-dark;
             color: #FDFDFD;
 
+            &__text{
+                padding: 10px 16px;
+            }
             &__map{
                 width: 100%;
-                height: 20vw;
+                height: 25vw;
+                transform: translate(-26px, -16px)
             }
         }
 

@@ -15,6 +15,19 @@
         </div>
         <div class="contactContainer__section__rightdiv">
             <h2>Nous contacter</h2>
+            <form action=""  class="contactContainer__section__rightdiv__form" method="post">
+                <label for="name" class="contactContainer__section__rightdiv__form__text">Nom complet</label> <br>
+                <input type="text" name="nom" placeholder="ex: Jérémy Floriac" class="contactContainer__section__rightdiv__form__input"><br>
+                <label for="entreprise" class="contactContainer__section__rightdiv__form__text">Entreprise</label> <br>
+                <input type="text" name="entreprise" placeholder="ex: EO Sércurité" class="contactContainer__section__rightdiv__form__input"><br>
+                <label for="mail" class="contactContainer__section__rightdiv__form__text">Adresse mail</label> <br>
+                <input type="mail" name="mail" placeholder="ex: jérémy@mail.com" class="contactContainer__section__rightdiv__form__input"><br>
+                <label for="text" class="contactContainer__section__rightdiv__form__text">Message</label> <br>
+                <textarea name="text" cols="30" rows="10" class="contactContainer__section__rightdiv__form__input"></textarea><br>
+                <input type="checkbox" name="certification">
+                <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
+            </form>
+            <a class="primaryButton contactContainer__section__rightdiv__button" href="">Envoyé</a>
         </div>
     </section>
 </main>

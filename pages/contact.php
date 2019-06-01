@@ -14,6 +14,7 @@
             </div>
         </div>
         <div class="contactContainer__section__rightdiv">
+            <h2>Nous contacter</h2>
         </div>
     </section>
 </main>

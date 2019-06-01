@@ -1,8 +1,3 @@
-/*
------------
-Global
------------
-*/
 var part__cntWd, part__sldWd, part__tb
 
 function part__mouseMove() {

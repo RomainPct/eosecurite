@@ -8,6 +8,11 @@
 @import "partials/contact";
 @import "partials/produit";
 
+@media screen and (orientation:portrait) {
+  @import "partials/responsive/header";
+  @import "partials/responsive/footer";
+}
+
 body, html {
   height: 100%;
   max-width: 100%;

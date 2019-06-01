@@ -33,7 +33,10 @@ gulpfile.task('jsLint', function(done) {
 gulpfile.task('sass', function() {
     return gulpfile.src(source + 'scss/main.scss')
         .pipe(plugins.sass().on('error', plugins.sass.logError))
-        .pipe(plugins.autoprefixer())
+        .pipe(plugins.autoprefixer({
+            browsers: ['last 4 versions'],
+            cascade: false
+        }))
         .pipe(gulpfile.dest(destination + 'styles/'))
 });
 

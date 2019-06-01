@@ -24,7 +24,9 @@
             </div>
             <h3 class="white">Nos produits</h3>
             <p class="white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore repellat quos magni quo quod natus porro sequi, neque voluptatibus illo assumenda voluptate. Non accusantium sint sed maxime quibusdam quaerat hic?</p>
-            <a class="primaryButton" id="left" href="../produits">Découvrir nos produits</a>
+            <div class="containerHome__lastLine__bloc__buttonContainer">
+                <a class="primaryButton" href="../produits">Découvrir nos produits</a>
+            </div>
         </div>
         <div class="containerHome__lastLine__bloc">
             <div class="containerHome__lastLine__bloc__smallPicture">
@@ -32,7 +34,9 @@
             </div>
             <h3 class="white">Nos formations</h3>
             <p class="white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore repellat quos magni quo quod natus porro sequi, neque voluptatibus illo assumenda voluptate. Non accusantium sint sed maxime quibusdam quaerat hic?</p>
-            <a class="primaryButton" id="right" href="../formations">Découvrir nos formations</a>
+            <div class="containerHome__lastLine__bloc__buttonContainer">
+                <a class="primaryButton" href="../formations">Découvrir nos formations</a>
+            </div>
         </div>
     </div>
 </main>

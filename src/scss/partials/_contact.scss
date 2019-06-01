@@ -1,0 +1,60 @@
+.contactContainer{
+    background-image: url(../../../assets/images/vagues/vague_contact.svg);
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    &__section{
+        display: flex;
+        padding: 42px 110px;
+        justify-content: space-between;
+        align-items: center;
+        &__leftdiv{
+            width: 45%;
+            background: $background-color-dark;
+            color: #FDFDFD;
+
+            &__text{
+                padding: 10px 16px;
+            }
+            &__map{
+                width: 100%;
+                height: 25vw;
+                transform: translate(-26px, -16px)
+            }
+        }
+        &__rightdiv{
+            width: 45%;
+
+            &__form{
+
+                &__text{
+                    font-weight: bold;
+                    margin-left: 20px;
+                }
+                &__input{
+                    width: 85%;
+                    border: solid $background-color-dark 3px;
+                    font-family: $font-primary;
+                    font-size: $font-size-body;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                }
+                &__inpu{
+                    width: 85%;
+                    border: solid $background-color-dark 3px;
+                    font-family: $font-primary;
+                    font-size: $font-size-body;
+                    padding: 10px;
+                }
+                &__check{
+                    margin-top: 26px;
+                    border: solid $background-color-dark 3px;
+                }
+            }
+            &__button{
+                margin-left: 40%;
+            }
+        }
+    }
+}

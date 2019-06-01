@@ -31,7 +31,7 @@ a.primaryButton.disable{
 }
 
 .white{
-    color: #FFFFFF
+    color: #FFFFFF !important;
 }
 
 //H1
@@ -61,6 +61,15 @@ h3{
     margin-bottom: 10px;
 }
 
+h3.white{
+    font: $font-primary;
+    font-weight: bold;
+    font-size: $font-size-body;
+    color: $text-color-white;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 //CORPS & CORPS SECONDAIRE
 
 p{
@@ -76,6 +85,15 @@ p.secondaryText{
     font-size: $font-size-body;
     opacity: 0,85;
     color: $text-color;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+p.secondaryTextWhite{
+    font: $font-primary;
+    font-size: $font-size-body;
+    opacity: 0,85;
+    color: $text-color-white;
     margin: 0;
     margin-bottom: 16px;
 }

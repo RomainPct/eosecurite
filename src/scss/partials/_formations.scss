@@ -1,6 +1,6 @@
 .containerFormations{
     background-image: url("../../../assets/images/vagues/vague_formations.svg");
-    background-position: center 32vh;
+    background-position: center 12vh;
     background-size: 100% auto;
     background-repeat: no-repeat;
     padding-bottom: 110px;
@@ -8,6 +8,7 @@
         margin: 42px 110px;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         &__trainings{
             width: 40vw;
             &__characteristics{
@@ -25,11 +26,11 @@
 .containerCardsFormations{
     display: flex;
     justify-content: space-around;
-    margin: 68px 110px 0px 110px;
+    margin: 68px 110px 0px;
     &__cardsTraining{
         width: 23vw;
         background-color: $background-color-dark;
-        margin: 90px 13px;
+        margin: 16px 13px;
         &__imgFormations{
             height: 20vw;
             top: 0;

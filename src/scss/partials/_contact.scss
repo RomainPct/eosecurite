@@ -9,7 +9,6 @@
         padding: 42px 110px;
         justify-content: space-between;
         align-items: center;
-       
         &__leftdiv{
             width: 45%;
             background: $background-color-dark;
@@ -24,7 +23,6 @@
                 transform: translate(-26px, -16px)
             }
         }
-
         &__rightdiv{
             width: 45%;
 
@@ -32,16 +30,30 @@
 
                 &__text{
                     font-weight: bold;
+                    margin-left: 20px;
                 }
-
                 &__input{
                     width: 85%;
                     border: solid $background-color-dark 3px;
+                    font-family: $font-primary;
+                    font-size: $font-size-body;
+                    padding: 10px;
+                    margin-bottom: 20px;
                 }
-            
+                &__inpu{
+                    width: 85%;
+                    border: solid $background-color-dark 3px;
+                    font-family: $font-primary;
+                    font-size: $font-size-body;
+                    padding: 10px;
+                }
+                &__check{
+                    margin-top: 26px;
+                    border: solid $background-color-dark 3px;
+                }
             }
             &__button{
-                margin-top: 30px;
+                margin-left: 40%;
             }
         }
     }

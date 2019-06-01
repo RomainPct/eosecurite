@@ -1,14 +1,22 @@
 #part__container{
     padding: 26px 42px;
+    background-image: url("../../../assets/images/vagues/vague_formations.svg");
+    background-position: center 12vh;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     #part__displayContainer{
         display: flex;
-        justify-content: space-around;
-        #part__leftDisplay{
-            display: flex;
-            flex-direction: column;
-            text-align: right;
-            width: 20vw;
+        justify-content: space-between;
+        #part__leftCont{
+            width: 50vw;
             justify-content: flex-end;
+            #part__leftDisplay{
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+                width: 20vw;
+                justify-content: flex-end;
+            }
         }
     }
     #part__slider{
@@ -16,19 +24,19 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 10vw 0;
+        margin: 17vw 0;
         margin-left: 15vw;
 
         .part__cards{
-            width: 8vw;
-            height: 12vw;
+            width: 9vw;
+            height: 14vw;
             background-color: $background-color-dark;
 
             img{
                 overflow: hidden;
-                height: 8vw;
-                width: 8vw;
-                transform: translate(-1.5vw,-1.5vw);
+                height: 9vw;
+                width: 9vw;
+                transform: translate(-1.2vw,-1.2vw);
             }
             
             h3{
@@ -38,19 +46,24 @@
         }
     }
     #part__partners{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-        padding: 0;
-
+        h2{
+            margin-left: 8vw;
+        }
+    
+        #part__squareCont{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            padding: 0;
+        }
         .part__partnersSquare{
 
             width: 10vw;
             height: 10vw;
             background-color: $color-primary;
-            margin: 1.5vw 1.8vw;
+            margin: 1.8vw 1.8vw;
 
         }
     }

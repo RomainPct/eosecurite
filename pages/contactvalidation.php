@@ -1,4 +1,8 @@
-<main>
-    <h2>Votre message a bien été enoyé</h2>
-    <a href="home.php" class="primaryButton">Revenir à l'accueil</a>
+<main class="contactvalidation">
+    <div class="contactvalidation__text">
+        <h2>Votre message a bien été enoyé</h2>
+    </div>
+    <div class="contactvalidation__text">
+        <a href="home" class="primaryButton">Revenir à l'accueil</a>
+    </div>
 </main>

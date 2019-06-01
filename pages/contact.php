@@ -27,7 +27,7 @@
                 <input type="checkbox" name="certification" class="contactContainer__section__rightdiv__form__check">
                 <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
             </form>
-            <a class="primaryButton contactContainer__section__rightdiv__button" href="contactvalidation.php">Envoyé</a>
+            <a class="primaryButton contactContainer__section__rightdiv__button" href="contactvalidation">Envoyé</a>
         </div>
     </section>
 </main>

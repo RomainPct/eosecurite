@@ -21,13 +21,13 @@
                 <label for="entreprise" class="contactContainer__section__rightdiv__form__text">Entreprise</label> <br>
                 <input type="text" name="entreprise" placeholder="ex: EO Sércurité" class="contactContainer__section__rightdiv__form__input"><br>
                 <label for="mail" class="contactContainer__section__rightdiv__form__text">Adresse mail</label> <br>
-                <input type="mail" name="mail" placeholder="ex: jérémy@mail.com" class="contactContainer__section__rightdiv__form__input"><br>
+                <input type="mail" name="mail" placeholder="ex: jeremy@mail.com" class="contactContainer__section__rightdiv__form__input"><br>
                 <label for="text" class="contactContainer__section__rightdiv__form__text">Message</label> <br>
-                <textarea name="text" cols="30" rows="10" class="contactContainer__section__rightdiv__form__inpu"></textarea><br>
+                <textarea name="text" cols="30" rows="10" class="contactContainer__section__rightdiv__form__textarea"></textarea><br>
                 <input type="checkbox" name="certification" class="contactContainer__section__rightdiv__form__check">
                 <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
             </form>
-            <a class="primaryButton contactContainer__section__rightdiv__button" href="contactvalidation">Envoyé</a>
+            <a class="primaryButton contactContainer__section__rightdiv__button" href="contactvalidation">Envoyer</a>
         </div>
     </section>
 </main>

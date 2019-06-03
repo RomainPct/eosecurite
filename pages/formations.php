@@ -20,7 +20,7 @@
                 <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
-                <a class="primaryButton white" href="../formation" title="Bouton formations">En savoir plus</a>
+                <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
             </div>
         </div>
         <div class= "containerCardsFormations__cardsTraining">
@@ -30,7 +30,7 @@
                 <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
-                <a class="primaryButton white" href="../formation" title="Bouton formations">En savoir plus</a>
+                <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
             </div>
         </div>
         <div class= "containerCardsFormations__cardsTraining">
@@ -40,7 +40,7 @@
                 <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
-                <a class="primaryButton white" href="../formation" title="Bouton formations">En savoir plus</a>
+                <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
             </div>
         </div>
     </div>

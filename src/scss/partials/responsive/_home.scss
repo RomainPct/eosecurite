@@ -1,0 +1,82 @@
+.containerHome{
+    &__line{
+        margin-top: 42px;
+        margin-left: 26px;
+        margin-right: 26px;
+        display: flex;
+        flex-direction: column;
+        &__bigPicture{
+            height: 49vw;
+            width: 87vw;
+            margin-bottom: 10px;
+        }
+        &__textJustifyLeft{
+            margin-left: 26px;
+            margin-right: 26px;
+            h2{
+                margin-bottom: 0px;
+            }
+            p{
+                max-width: 87vw;
+                margin-bottom: 0px;
+            }
+        }
+        &__textJustifyRight{
+            text-align: right;
+            margin-left: 26px;
+            margin-right: 26px;
+            display: flex;
+            align-items: flex-end;
+            h2{
+                margin-bottom: 0px;
+            }
+            p{
+                max-width: 87vw;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    &__lastLine{
+        margin-top: 0px;
+        margin-left: 52px;
+        margin-right: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &__bloc{
+            margin-top: 58px;
+            background-color: $background-color-dark;
+            width: 81vw;
+            margin-bottom: 0px;
+            &__smallPicture{
+                height: 59vw;
+                width: 81vw;
+                background-color: #EAEAEA;
+                transform: translate(-26px, -16px);
+            }
+            h3{
+                margin-top: 26px;
+                margin-left: 16px;
+            }
+            p{
+                max-width: 73vw;
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+            &__buttonContainer{
+                text-align: center;
+                a{
+                    margin-bottom: 28px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.lastMarginBottom{
+    margin-bottom: 42px;
+}

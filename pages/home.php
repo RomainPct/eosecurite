@@ -8,7 +8,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil eaque magni minima alias, non nesciunt quae porro libero? Aliquid repellat libero maiores soluta, rem odit quasi. Accusamus, nemo repellat.</p>
         </div>
     </div>
-    <div class="containerHome__line">
+    <div class="containerHome__line reverse">
         <div class="containerHome__line__textJustifyRight">
             <h2>Nos spécificités</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil eaque magni minima alias, non nesciunt quae porro libero? Aliquid repellat libero maiores soluta, rem odit quasi. Accusamus, nemo repellat.</p>
@@ -28,7 +28,7 @@
                 <a class="primaryButton" href="../produits">Découvrir nos produits</a>
             </div>
         </div>
-        <div class="containerHome__lastLine__bloc">
+        <div class="containerHome__lastLine__bloc lastMarginBottom">
             <div class="containerHome__lastLine__bloc__smallPicture">
                 <img src="#" alt="Nos formations">
             </div>

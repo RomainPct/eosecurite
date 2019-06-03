@@ -1,0 +1,36 @@
+nav{
+    background-color: $background-color;
+    ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-top: 100px;
+        display: none;
+        background-color: $background-color;
+        li{
+            margin-top: 26px;
+            margin-left: 0px;
+            margin-right: 0px;
+            .primaryButton{
+                margin-bottom: 26px;
+            }
+        }
+    }
+    .menuButton{
+        display: block;
+        font-family: $font-primary-bold;
+        font-size: $font-size-body;
+        font-weight: bold;
+    }
+    .menuButton:hover{
+        cursor: pointer;
+    }
+    .menuButton:hover{
+        opacity: 0.70;
+    }
+    .visible{
+        display: block;
+    }
+}

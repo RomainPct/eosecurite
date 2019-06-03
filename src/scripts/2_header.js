@@ -1,9 +1,3 @@
-/*
------------
-Global
------------
-*/
-
 var menuBtn = document.querySelector('.menuButton')
 var subMenu = document.querySelector('.subMenu')
 

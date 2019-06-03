@@ -1,0 +1,25 @@
+.contactContainer{
+    
+    &__section{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 26px;
+
+        &__leftdiv{
+            width: 100%
+        }
+
+        &__rightdiv{
+            margin-top: 26px;
+            width: 100%;
+            &__form{
+                &__input{
+                    width: 94.5%;
+                }
+                &__textarea{
+                    width: 94.5%;
+                }
+            }
+        }
+    }
+}

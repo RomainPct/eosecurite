@@ -1,25 +1,37 @@
 .containerFormationDetaillee{
-    background-image: url("../../../assets/images/vagues/vague_formation_detail.svg");
-    background-position: right 12vh;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  //  position: fixed;
+    min-height: 100vh;
     &__contentFormationDetaillee{
-        margin: 42px 110px;
-        display: flex;
+        padding: 42px 110px;
+        width: 55vw;
+        box-sizing: border-box;
         &__titleFormationDetaillee{
             margin-bottom:26px;
-            width: 40vw;
         }
     }
     &__formationAskQuotation{
         position: fixed;
-        justify-content: flex-end;
-        width: 26vw;
-        height: 23vw;
-        background-color: $background-color-dark;
-        &__informationFormationQuotation{
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        right: 0;
+        top: 100px;
+        bottom: 0;
+        width: 45vw;
+        z-index: -1;
+        align-items: center;
+        background-image: url(../../../assets/images/vagues/vague_formation_detail.svg);
+        background-position: right top;
+        background-size: 70% auto;
+        background-repeat: no-repeat;
+        padding: 0px 110px;
+        &__informationQuotation{
+            padding: 26px 16px;
+            background-color: $background-color-dark;
             p{color: white;}
+            &__buttonQuotation{
+                margin-top: 26px;
+                text-align: center;
+            }
         }
     }
 }

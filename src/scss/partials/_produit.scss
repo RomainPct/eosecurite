@@ -43,7 +43,6 @@
     }
     #part__partners{
         h2{
-            margin-left: 8vw;
         }
     
         #part__squareCont{
@@ -51,15 +50,17 @@
             flex-direction: row;
             flex-wrap: wrap;
             width: 100%;
-            justify-content: center;
+            justify-content: space-around;
             padding: 0;
+            
         }
         .part__partnersSquare{
 
             width: 10vw;
             height: 10vw;
             background-color: $color-primary;
-            margin: 1.8vw 1.8vw;
+            margin-bottom: 52px;
+            margin-right: 52px;
 
         }
     }

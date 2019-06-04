@@ -1,0 +1,18 @@
+#part__container{
+
+    #part__displayContainer{
+        display: flex;
+        flex-direction: column;
+
+        #part__leftCont{
+            width: 87vw;
+            text-align: left;
+        }
+    }
+    #part__squareCont{ 
+        #part__partnersSquare{
+            margin-right: 0;
+        }
+
+    }
+}

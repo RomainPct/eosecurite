@@ -1,5 +1,5 @@
 <main id="part__container">
-    <h1>Les partenaires et les produits proposés par EO Sécurité</h1>
+    <h1>Les partenaires et les produits proposés par EO Sécurité, Reims</h1>
     <section id="part__displayContainer">
         <div id="part__leftCont">
             <h2>Nos Produits</h2>

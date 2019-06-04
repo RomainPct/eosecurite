@@ -3,11 +3,23 @@
     background-position: right 12vh;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    padding-bottom: 110px;
+  //  position: fixed;
     &__contentFormationDetaillee{
+        margin: 42px 110px;
+        display: flex;
         &__titleFormationDetaillee{
-            margin: 42px 110px 26px 110px;
+            margin-bottom:26px;
             width: 40vw;
+        }
+    }
+    &__formationAskQuotation{
+        position: fixed;
+        justify-content: flex-end;
+        width: 26vw;
+        height: 23vw;
+        background-color: $background-color-dark;
+        &__informationFormationQuotation{
+            p{color: white;}
         }
     }
 }

@@ -1,3 +1,4 @@
+<h1>Les formations de EO Sécurité Reims</h1>
 <main class="containerFormations">
     <div class="containerFormations__containerTrainings">
         <div class="containerFormations__containerTrainings__trainings">

@@ -1,6 +1,7 @@
 // récupérer la width totale de #part__slider
 var slider = document.querySelector('#part__slider')
-var sliderWidth = slider.offsetWidth
+if (slider != null) {
+    var sliderWidth = slider.offsetWidth
 console.log(sliderWidth)
 // récupérer la width de l'écran de l'utilisateur
 var screenWidth = window.innerWidth - 220
@@ -29,3 +30,4 @@ console.log(offScreen)
          offScreen = prctSlider - 100
 
     }
+}

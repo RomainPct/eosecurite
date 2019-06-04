@@ -1,3 +1,4 @@
+<h1>Les informations des formations de EO Sécurité Reims</h1>
 <main class= "containerFormationDetaillee">
     <div class="containerFormationDetaillee__contentFormationDetaillee">
         <div class="containerFormationDetaillee__contentFormationDetaillee__titleFormationDetaillee">

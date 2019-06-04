@@ -1,7 +1,11 @@
 //PRIMARY BUTTON
-a.primaryButton{
+a.primaryButton, button.primaryButton {
+    -webkit-appearance: none;
     font: $font-primary;
     font-weight: bold;
+    font-size: $font-size-body;
+    border: none;
+    cursor: pointer;
     color: $text-color;
     display: inline-block;
     position: relative;
@@ -9,7 +13,7 @@ a.primaryButton{
     z-index: 35;
 }
 
-a.primaryButton::after{
+a.primaryButton::after, button.primaryButton::after{
     position: absolute;
     z-index: -35;
     content:" ";
@@ -21,13 +25,13 @@ a.primaryButton::after{
     transition: 0.2s all;
 }
 
-a.primaryButton:hover::after{
+a.primaryButton:hover::after, button.primaryButton:hover::after{
     bottom: -8px;
     left: 0;
 }
 
 a.primaryButton.disable{
-    opacity: 0,5;
+    opacity: 0.5;
 }
 
 .white{

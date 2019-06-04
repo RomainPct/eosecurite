@@ -22,3 +22,12 @@ menuBtn.addEventListener(
         }
     }
 )
+
+greyOpacity.addEventListener(
+    'click',
+    function(){
+        subMenu.classList.remove('visible')
+        greyOpacity.classList.remove('visible')
+        menuBtn.innerHTML = "MENU"
+    }
+)

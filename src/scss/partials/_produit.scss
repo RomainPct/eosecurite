@@ -15,43 +15,47 @@
             text-align: right;
         }
     }
-    #part__slider{
-        width: 120vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 14vw 0;
-        margin-left: 15vw;
+    #part__sliderCont{
+        position: relative;
+        margin: 110px 0;
+        height: 20vw;
+         #part__slider{
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             position: absolute;
+             left: 0;
+             top: 50%;
+             transform: translate(0,-50%);
+             .part__cards{
+                 width: 140px;
+                 background-color: $background-color-dark;
+                 margin-right: 68px;
 
-        .part__cards{
-            width: 9vw;
-            height: 14vw;
-            background-color: $background-color-dark;
-
-            img{
-                overflow: hidden;
-                height: 9vw;
-                width: 9vw;
-                transform: translate(-1.2vw,-1.2vw);
-            }
+                  img{
+                     overflow: hidden;
+                     height: 130px;
+                     width: 130px;
+                      transform: translate(-1.2vw,-1.2vw);
+                  }
             
-            h3{
-                text-align: center;
-                color: $background-color
+                 h3{
+                     text-align: center;
+                    color: $background-color
+                }
             }
         }
     }
+
     #part__partners{
-        h2{
-        }
     
         #part__squareCont{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 100%;
-            justify-content: space-around;
+            justify-content: space-between;
             padding: 0;
+            margin-bottom: 42px;
             
         }
         .part__partnersSquare{
@@ -59,8 +63,7 @@
             width: 10vw;
             height: 10vw;
             background-color: $color-primary;
-            margin-bottom: 52px;
-            margin-right: 52px;
+            margin-bottom: 26px;
 
         }
     }

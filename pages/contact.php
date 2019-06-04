@@ -16,27 +16,29 @@
         </div>
         <div class="contactContainer__section__rightdiv">
             <h2>Nous contacter</h2>
-            <form action=""  class="contactContainer__section__rightdiv__form" method="post">
+            <form action="php/contact.php"  class="contactContainer__section__rightdiv__form" method="post">
             <div>
                 <label for="name" class="contactContainer__section__rightdiv__form__text">Nom complet</label>
-                <input type="text" name="nom" placeholder="ex: Jérémy Floriac" class="contactContainer__section__rightdiv__form__input">
+                <input type="text" name="name" placeholder="ex: Jérémy Floriac" class="contactContainer__section__rightdiv__form__input">
             </div>
             <div>
-                <label for="entreprise" class="contactContainer__section__rightdiv__form__text">Entreprise</label>
-                <input type="text" name="entreprise" placeholder="ex: EO Sércurité" class="contactContainer__section__rightdiv__form__input">
+                <label for="company" class="contactContainer__section__rightdiv__form__text">Entreprise</label>
+                <input type="text" name="company" placeholder="ex: EO Sércurité" class="contactContainer__section__rightdiv__form__input">
             </div>
             <div>
-                <label for="mail" class="contactContainer__section__rightdiv__form__text">Adresse mail</label>
-                <input type="mail" name="mail" placeholder="ex: jeremy@mail.com" class="contactContainer__section__rightdiv__form__input">
+                <label for="email" class="contactContainer__section__rightdiv__form__text">Adresse mail</label>
+                <input type="mail" name="email" placeholder="ex: jeremy@mail.com" class="contactContainer__section__rightdiv__form__input">
             </div>
             <div>
-                <label for="text" class="contactContainer__section__rightdiv__form__text">Message</label>
-                <textarea name="text" cols="30" rows="10" class="contactContainer__section__rightdiv__form__textarea"></textarea>
+                <label for="message" class="contactContainer__section__rightdiv__form__text">Message</label>
+                <textarea name="message" cols="30" rows="10" class="contactContainer__section__rightdiv__form__textarea"></textarea>
             </div>
-                <input type="checkbox" name="certification" class="contactContainer__section__rightdiv__form__check">
+            <div>
+                <input type="checkbox" name="isACompany" class="contactContainer__section__rightdiv__form__check">
                 <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
+            </div>
+            <button class="primaryButton contactContainer__section__rightdiv__button">Envoyer</button>
             </form>
-            <a class="primaryButton contactContainer__section__rightdiv__button" href="contactvalidation">Envoyer</a>
         </div>
     </section>
 </main>

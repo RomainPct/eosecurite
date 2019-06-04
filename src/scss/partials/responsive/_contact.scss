@@ -6,7 +6,10 @@
         padding: 16px 26px;
 
         &__leftdiv{
-            width: 100%
+            width: 100%;
+            &__map{
+                height: 50vw;
+            }
         }
 
         &__rightdiv{

@@ -11,8 +11,8 @@
             margin-bottom: 10px;
         }
         &__textJustifyLeft{
-            margin-left: 26px;
-            margin-right: 26px;
+            margin-left: 0px;
+            margin-right: 0px;
             h2{
                 margin-bottom: 0px;
             }
@@ -23,8 +23,8 @@
         }
         &__textJustifyRight{
             text-align: right;
-            margin-left: 26px;
-            margin-right: 26px;
+            margin-left: 0px;
+            margin-right: 0px;
             display: flex;
             align-items: flex-end;
             h2{

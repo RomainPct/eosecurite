@@ -7,4 +7,5 @@
         <li><a class="primaryButton" href="/contact" title="Contact EO sécurité">Contact</a></li>
     </ul>
     <div class="menuButton">MENU</div>
+    <div class="greyOpacity"></div>
 </nav>

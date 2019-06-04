@@ -7,12 +7,13 @@ nav{
     ul{
         position: fixed;
         top: 0;
-        left: 0;
-        right: 0;
+        right: -100vw;
+        width: 100vw;
         text-align: center;
-        margin-top: 100px;
-        display: none;
+        margin-top: 80px;
+        display: block;
         background-color: $background-color;
+        transition:0.3s right;
         li{
             margin-top: 26px;
             margin-left: 0px;
@@ -21,6 +22,20 @@ nav{
                 margin-bottom: 26px;
             }
         }
+    }
+    .greyOpacity{
+        position: fixed;
+        top: 80px;
+        right: -100vw;
+        bottom: 0;
+        width: 100vw;
+        background-color: $background-color-dark;
+        opacity: 0.6;
+        transition:0.3s right;
+        z-index: -2;
+    }
+    .visible{
+        right: 0;
     }
     .menuButton{
         display: block;
@@ -33,8 +48,5 @@ nav{
     }
     .menuButton:hover{
         opacity: 0.70;
-    }
-    .visible{
-        display: block;
     }
 }

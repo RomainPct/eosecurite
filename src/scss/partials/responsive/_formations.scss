@@ -1,4 +1,6 @@
 .containerFormations{
+    padding-bottom: 42px;
+    background-image: none;
     &__containerTrainings{
         margin: 42px;
         display: flex;
@@ -8,12 +10,15 @@
             width: 87vw;
             margin: 0px 26px;
             &__characteristics{
+                width: 100vw;
                 margin: 16px;
                 padding: 26px;
-                width: 100%;
                 background-color: $background-color-dark;
+                h3{
+                    padding-left: 68px;
+                }
                 p{
-                    padding-left: 42px;
+                    padding-left: 84px;
                 }
             }
         }
@@ -23,7 +28,7 @@
 .containerCardsFormations{
     display: flex;
     flex-direction: column;
-    margin: 58px 26px;
+    margin: 10px 26px;
     &__cardsTraining{
         width: 81vw;
         background-color: $background-color-dark;

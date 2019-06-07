@@ -8,6 +8,7 @@
             width: 87vw;
             margin: 0px 26px;
             &__characteristics{
+                margin: 16px;
                 padding: 26px;
                 width: 100%;
                 background-color: $background-color-dark;
@@ -22,11 +23,11 @@
 .containerCardsFormations{
     display: flex;
     flex-direction: column;
-    margin: 58px 26px 0px 52px;
+    margin: 58px 26px;
     &__cardsTraining{
         width: 81vw;
         background-color: $background-color-dark;
-        margin: 42px;
+        margin: 42px 0px 0px 26px;
         &__imgFormations{
             height: 57vw;
             top: 0;

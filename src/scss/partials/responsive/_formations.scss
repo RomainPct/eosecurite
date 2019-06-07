@@ -1,0 +1,48 @@
+.containerFormations{
+    &__containerTrainings{
+        margin: 42px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__trainings{
+            width: 87vw;
+            margin: 0px 26px;
+            &__characteristics{
+                padding: 26px;
+                width: 100%;
+                background-color: $background-color-dark;
+                p{
+                    padding-left: 42px;
+                }
+            }
+        }
+    }
+}
+
+.containerCardsFormations{
+    display: flex;
+    flex-direction: column;
+    margin: 58px 26px 0px 52px;
+    &__cardsTraining{
+        width: 81vw;
+        background-color: $background-color-dark;
+        margin: 42px;
+        &__imgFormations{
+            height: 57vw;
+            top: 0;
+            background-color: #EAEAEA;
+            transform: translate(-26px, -16px);
+        }
+        &__contentFormations{
+            padding: 16px;
+        }
+        &__buttonFormations{
+            text-align: center;
+            a{
+                margin-bottom: 28px;
+                color: white;
+            }
+        }
+    }
+
+}

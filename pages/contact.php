@@ -33,9 +33,11 @@
                 <label for="message" class="contactContainer__section__rightdiv__form__text">Message</label>
                 <textarea name="message" cols="30" rows="10" class="contactContainer__section__rightdiv__form__textarea"></textarea>
             </div>
-            <div>
-                <input type="checkbox" name="isACompany" class="contactContainer__section__rightdiv__form__check">
-                <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
+            <div class="contactContainer__section__rightdiv__form__check">
+                <input type="checkbox" name="isACompany" class="contactContainer__section__rightdiv__form__check__square">
+                <div class="contactContainer__section__rightdiv__form__check__text">
+                    <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
+                </div>
             </div>
             <button class="primaryButton contactContainer__section__rightdiv__button">Envoyer</button>
             </form>

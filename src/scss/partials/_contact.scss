@@ -57,16 +57,25 @@
                     outline: none;
                     resize: none;
                 }
-                &__check:checked{
-                    border-color: $color-primary;
-                    background-color: $background-color-dark;
-                }
                 &__check{
+                    display: flex;
+                    align-items: center;
                     margin-top: 26px;
-                    border: solid $background-color-dark 3px;
-                    height: 20px;
-                    width: 20px;
-                    -webkit-appearance: none;
+                    &__square:checked{
+                        border-color: $color-primary;
+                        background-color: $background-color-dark;
+                    }
+                    &__square{
+                        border: solid $background-color-dark 3px;
+                        height: 20px;
+                        width: 20px;
+                        -webkit-appearance: none;
+                        align-items: center;
+                    }
+                    &__text{
+                        align-items: center;
+                        padding: 10px;
+                    }
                 }
             }
             &__button{

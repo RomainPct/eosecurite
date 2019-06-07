@@ -39,7 +39,9 @@
                     <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
                 </div>
             </div>
-            <button class="primaryButton contactContainer__section__rightdiv__button">Envoyer</button>
+            <div class="primaryButton contactContainer__section__rightdiv__button">
+                <button class="primaryButton contactContainer__section__rightdiv__button">Envoyer</button>
+            </div>
             </form>
         </div>
     </section>

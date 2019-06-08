@@ -14,12 +14,25 @@
         
     }
     #part__sliderCont{
+        height: auto;
+        margin: 42px 0;
 
         #part__slider{
             width: 100%;
-            position: relative;
-            flex-direction: column;
+            position: static;
+            flex-direction: row;
+            transform: none;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .part__cards{
+                width: 23vw;
+                margin: 0 0 26px 0;
+                img{
+                    width: 23vw;
+                    height: 23vw;
 
+                }
+            }
         }
     }
    

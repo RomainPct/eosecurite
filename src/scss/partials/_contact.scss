@@ -42,6 +42,9 @@
                     background: $background-color;
                     outline: none;
                 }
+                &__input:invalid{
+                    border-color: red;
+                }
                 &__input:focus{
                     border-color: $color-primary;
                 }

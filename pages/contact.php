@@ -19,23 +19,25 @@
             <form action="php/contact.php"  class="contactContainer__section__rightdiv__form" method="post">
             <div>
                 <label for="name" class="contactContainer__section__rightdiv__form__text">Nom complet</label>
-                <input type="text" name="name" placeholder="ex: Jérémy Floriac" class="contactContainer__section__rightdiv__form__input">
+                <input type="text" name="name" placeholder="ex: Jérémy Floriac" class="error contactContainer__section__rightdiv__form__input">
             </div>
             <div>
                 <label for="company" class="contactContainer__section__rightdiv__form__text">Entreprise</label>
-                <input type="text" name="company" placeholder="ex: EO Sércurité" class="contactContainer__section__rightdiv__form__input">
+                <input type="text" name="company" placeholder="ex: EO Sércurité" class="error contactContainer__section__rightdiv__form__input">
+                <span class="error"></span>
             </div>
             <div>
-                <label for="email" class="contactContainer__section__rightdiv__form__text">Adresse mail</label>
-                <input type="mail" name="email" placeholder="ex: jeremy@mail.com" class="contactContainer__section__rightdiv__form__input">
+                <label for="email" class="email contactContainer__section__rightdiv__form__text">Adresse mail</label>
+                <input type="email" name="email" placeholder="ex: jeremy@mail.com" class="error contactContainer__section__rightdiv__form__input">
+                <span class="error"></span>
             </div>
             <div>
                 <label for="message" class="contactContainer__section__rightdiv__form__text">Message</label>
-                <textarea name="message" cols="30" rows="10" class="contactContainer__section__rightdiv__form__textarea"></textarea>
+                <textarea name="message" cols="30" rows="10" class="error contactContainer__section__rightdiv__form__textarea"></textarea>
             </div>
             <div class="contactContainer__section__rightdiv__form__check">
-                <input type="checkbox" name="isACompany" class="contactContainer__section__rightdiv__form__check__square">
-                <div class="contactContainer__section__rightdiv__form__check__text">
+                <input type="checkbox" name="isACompany" class="error contactContainer__section__rightdiv__form__check__square">
+                <div class="check contactContainer__section__rightdiv__form__check__text">
                     <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
                 </div>
             </div>
@@ -46,3 +48,4 @@
         </div>
     </section>
 </main>
+<script src="../assets/scripts/contact.js" ></script>

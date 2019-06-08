@@ -1,3 +1,4 @@
+<?php include_once 'Candide.php' ?>
 <!DOCTYPE html>
 <html>
 <head lang="fr">

@@ -11,18 +11,36 @@ $c1 = new CandideCollection ('formations');
         </div>
         <div class="containerFormations__containerTrainings__trainings__characteristics">
             <h3 class="white">Les spécificités EO Sécurité</h3>
-            <p class="white"><?php $c->text('première_spécificité_eo_securite') ?></p>
-            <p class= "white"><?php $c->text('deuxième_spécificité_eo_securite') ?></p>
-            <p class="white"><?php $c->text('troisième_spécificité_eo_securite') ?></p>
+            <p class="white"><?php $c->text('premiere_specificite_eo_securite') ?></p>
+            <p class= "white"><?php $c->text('deuxieme_specificite_eo_securite') ?></p>
+            <p class="white"><?php $c->text('troisieme_specificite_eo_securite') ?></p>
         </div>
     </div>
 
     <div class="containerCardsFormations">
+    <?php 
+    foreach($c1->avalaibleItemIds() as $id){
+        ?>
+        <div class= "containerCardsFormations__cardsTraining">
+            <div class="containerCardsFormations__cardsTraining__imgFormations">
+                <img src="<?php $c1->image('image_de_la_formation', $id,[400,200]) ?>" alt="">
+            </div>
+            <div class="containerCardsFormations__cardsTraining__contentFormations">
+                <h3 class="white"><?php $c1->text('nom_de_la_formation', $id) ?></h3>
+                <p class="white"><?php $c1->text('description_de_la_formation', $id) ?></p>
+            </div>
+            <div class="containerCardsFormations__cardsTraining__buttonFormations">
+                <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
+            </div>
+        </div>
+        <?php
+    }
+    ?>
         <div class= "containerCardsFormations__cardsTraining">
             <div class="containerCardsFormations__cardsTraining__imgFormations"></div>
             <div class="containerCardsFormations__cardsTraining__contentFormations">
-                <h3 class="white">Formation 1</h3>
-                <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
+                <h3 class="white"><?php $c->text('nom_de_la_formation') ?></h3>
+                <p class="white"><?php $c->text('description_de_la_formation') ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
                 <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
@@ -31,8 +49,8 @@ $c1 = new CandideCollection ('formations');
         <div class= "containerCardsFormations__cardsTraining">
             <div class="containerCardsFormations__cardsTraining__imgFormations"></div>
             <div class="containerCardsFormations__cardsTraining__contentFormations">
-                <h3 class="white">Formation 2</h3>
-                <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
+                <h3 class="white"><?php $c->text('nom_de_la_formation') ?></h3>
+                <p class="white"><?php $c->text('description_de_la_formation') ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
                 <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
@@ -41,8 +59,8 @@ $c1 = new CandideCollection ('formations');
         <div class= "containerCardsFormations__cardsTraining">
             <div class="containerCardsFormations__cardsTraining__imgFormations"></div>
             <div class="containerCardsFormations__cardsTraining__contentFormations">
-                <h3 class="white">Formation 3</h3>
-                <p class="white">Description rapide de la formation en quelques lignes. But, contenu, avantages et intérêts de la formation</p>
+                <h3 class="white"><?php $c->text('nom_de_la_formation') ?></h3>
+                <p class="white"><?php $c->text('description_de_la_formation') ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
                 <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>

@@ -1,6 +1,6 @@
-let form = document.getElementsByTagName('form')[0]
+/*let form = document.querySelector('form')[0]
 let email = document.querySelector('.email')
-let inputs = document.getElementsByTagName('input')
+let inputs = document.querySelectorAll('input')
 let check = document.querySelector('.check')
 let error = document.querySelector('.error')
 
@@ -32,3 +32,43 @@ form.addEventListener("submit", function(event){
       event.preventDefault()
     }
 }, false);
+*/
+let form = document.querySelector('form')
+let inputs = document.querySelectorAll('input')
+let check = document.querySelector('.check')
+let textarea = document.querySelector('textarea')
+
+inputs.forEach(function(input){
+    input.addEventListener("input", function(e){
+        error.innerHTML = "Champs invalide !"
+        error.className = "error"
+    })
+})
+
+textarea.addEventListener("input", function(textarea){
+    error.innerHTML = "Champs invalide !"
+    error.className = "error"
+})
+
+form.addEventListener("submit", function(e){
+    if(inputs[0].validity.valid) {
+        error.innerHTML = "Champs invalide !"
+        error.className = "error active"
+        e.preventDefault()
+    }
+    else if(inputs[1].value.lenght <= 0) {
+        error.innerHTML = "Champs invalide !"
+        error.className = "error active"
+        e.preventDefault()
+    }
+    else if(inputs[2].value.lenght <= 0) {
+        error.innerHTML = "Champs invalide !"
+        error.className = "error active"
+        e.preventDefault()
+    }
+    else if(inputs[3].value.lenght <= 0) {
+        error.innerHTML = "Champs invalide !"
+        error.className = "error active"
+        e.preventDefault()
+    }
+})

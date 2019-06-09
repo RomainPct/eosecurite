@@ -48,4 +48,3 @@
         </div>
     </section>
 </main>
-<script src="../assets/scripts/contact.js" ></script>

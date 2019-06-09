@@ -1,15 +1,19 @@
+<?php 
+$c = new CandidePage ('formations');
+$c1 = new CandideCollection ('formations');
+?>
 <h1>Les formations de EO Sécurité Reims</h1>
 <main class="containerFormations">
     <div class="containerFormations__containerTrainings">
         <div class="containerFormations__containerTrainings__trainings">
-            <h2>Nos formations</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto est cumque, molestiae sunt, quae aliquid ad nisi maxime tempora incidunt voluptate ipsa ullam quam provident, debitis vel numquam possimus obcaecati.</p>
+            <h2><?php $c->text('titre_pour_les_formations') ?></h2>
+            <p><?php $c->text('description_des_formations') ?></p>
         </div>
         <div class="containerFormations__containerTrainings__trainings__characteristics">
             <h3 class="white">Les spécificités EO Sécurité</h3>
-            <p class="white">Stages accélérés (2x plus rapide)</p>
-            <p class= "white">Non-reconnu par xxx</p>
-            <p class="white">Stages de qualité réalisés par des experts</p>
+            <p class="white"><?php $c->text('première_spécificité_eo_securite') ?></p>
+            <p class= "white"><?php $c->text('deuxième_spécificité_eo_securite') ?></p>
+            <p class="white"><?php $c->text('troisième_spécificité_eo_securite') ?></p>
         </div>
     </div>
 

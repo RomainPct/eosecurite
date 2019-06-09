@@ -1,40 +1,43 @@
+<?php 
+$c1 = new CandidePage('accueil');
+?>
 <main class="containerHome">
     <h1>Accueil de l'entreprise EO Sécurité à Reims</h1>
     <div class="containerHome__line">
         <div class="containerHome__line__bigPicture">
-            <img src="#" alt="L'entreprise EO Sécurtié">
+            <img src="<?php $c1->image('illustration_description_line_1',[644,397]); ?>" alt="L'entreprise EO Sécurtié">
         </div>
         <div class="containerHome__line__textJustifyLeft">
-            <h2>L'entreprise EO Sécurité</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil eaque magni minima alias, non nesciunt quae porro libero? Aliquid repellat libero maiores soluta, rem odit quasi. Accusamus, nemo repellat.</p>
+            <h2><?php $c1->text('title_line_1'); ?></h2>
+            <p><?php $c1->text('description_line_1'); ?></p>
         </div>
     </div>
     <div class="containerHome__line reverse">
         <div class="containerHome__line__textJustifyRight">
-            <h2>Nos spécificités</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil eaque magni minima alias, non nesciunt quae porro libero? Aliquid repellat libero maiores soluta, rem odit quasi. Accusamus, nemo repellat.</p>
+            <h2><?php $c1->text('title_line_2'); ?></h2>
+            <p><?php $c1->text('description_line_2'); ?></p>
         </div>
         <div class="containerHome__line__bigPicture">
-            <img src="#" alt="Nos spécificités">
+            <img src="<?php $c1->image('illustration_description_line_2',[644,397]); ?>" alt="Nos spécificités">
         </div>
     </div>
     <div class="containerHome__lastLine">
         <div class="containerHome__lastLine__bloc">
             <div class="containerHome__lastLine__bloc__smallPicture">
-                <img src="#" alt="Nos produits">
+                <img src="<?php $c1->image('illustration_description_line_3_left',[397,245]); ?>" alt="Nos produits">
             </div>
-            <h3 class="white">Nos produits</h3>
-            <p class="white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore repellat quos magni quo quod natus porro sequi, neque voluptatibus illo assumenda voluptate. Non accusantium sint sed maxime quibusdam quaerat hic?</p>
+            <h3 class="white"><?php $c1->text('title_line_3_left'); ?></h3>
+            <p class="white"><?php $c1->text('description_line_3_left'); ?></p>
             <div class="containerHome__lastLine__bloc__buttonContainer">
                 <a class="primaryButton" href="../produits">Découvrir nos produits</a>
             </div>
         </div>
         <div class="containerHome__lastLine__bloc lastMarginBottom">
             <div class="containerHome__lastLine__bloc__smallPicture">
-                <img src="#" alt="Nos formations">
+                <img src="<?php $c1->image('right',[397,245]); ?>" alt="Nos formations">
             </div>
-            <h3 class="white">Nos formations</h3>
-            <p class="white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore repellat quos magni quo quod natus porro sequi, neque voluptatibus illo assumenda voluptate. Non accusantium sint sed maxime quibusdam quaerat hic?</p>
+            <h3 class="white"><?php $c1->text('right'); ?></h3> 
+            <p class="white"><?php $c1->text('description_line_3_right'); ?></p>
             <div class="containerHome__lastLine__bloc__buttonContainer">
                 <a class="primaryButton" href="../formations">Découvrir nos formations</a>
             </div>

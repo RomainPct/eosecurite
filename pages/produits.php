@@ -64,6 +64,6 @@
         </div>
     </section>
     <section id="part__contact">
-        <a href="/contact" title="Contact EO sécurité" class="primaryButton">Prenez contact avec EO Sécurité</a>
+        <a href="/contact" title="Contact EO sécurité" class="primaryButton">Prendre contact avec EO Sécurité</a>
     </section>
 </main>

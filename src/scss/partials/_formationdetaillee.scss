@@ -17,7 +17,8 @@
         top: 100px;
         bottom: 0;
         width: 45vw;
-        z-index: -1;
+        z-index: 1;
+        pointer-events: none;
         align-items: center;
         background-image: url(../../../assets/images/vagues/vague_formation_detail.svg);
         background-position: right bottom;
@@ -31,6 +32,7 @@
             &__buttonQuotation{
                 margin-top: 26px;
                 text-align: center;
+                pointer-events: all;
             }
         }
     }

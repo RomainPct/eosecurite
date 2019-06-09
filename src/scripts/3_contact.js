@@ -37,38 +37,40 @@ let form = document.querySelector('form')
 let inputs = document.querySelectorAll('input')
 let check = document.querySelector('.check')
 let textarea = document.querySelector('textarea')
+let error = document.querySelector('.error')
 
 inputs.forEach(function(input){
     input.addEventListener("input", function(e){
         error.innerHTML = "Champs invalide !"
-        error.className = "error"
+        error.classList.remove = "error"
+        console.log(error)
     })
 })
 
 textarea.addEventListener("input", function(textarea){
     error.innerHTML = "Champs invalide !"
-    error.className = "error"
+    error.classList.remove = "error"
 })
 
 form.addEventListener("submit", function(e){
     if(inputs[0].validity.valid) {
         error.innerHTML = "Champs invalide !"
-        error.className = "error active"
+        error.classList.add = "error active"
         e.preventDefault()
     }
     else if(inputs[1].value.lenght <= 0) {
         error.innerHTML = "Champs invalide !"
-        error.className = "error active"
+        error.classList.add = "error active"
         e.preventDefault()
     }
     else if(inputs[2].value.lenght <= 0) {
         error.innerHTML = "Champs invalide !"
-        error.className = "error active"
+        error.classList.add = "error active"
         e.preventDefault()
     }
     else if(inputs[3].value.lenght <= 0) {
         error.innerHTML = "Champs invalide !"
-        error.className = "error active"
+        error.classList.add = "error active"
         e.preventDefault()
     }
 })

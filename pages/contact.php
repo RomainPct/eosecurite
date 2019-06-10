@@ -1,3 +1,6 @@
+<?php
+$c = new CandidePage('contact');
+?>
 <h1>contacter eosécurité reims</h1>
 <main class="contactContainer">
     <section class="contactContainer__section">
@@ -7,10 +10,10 @@
                 <h3 class="white">EO Sécurité</h3>
                 <p class="secondaryTextWhite">
                     Adresse:<br>
-                    x Rue de Tagada<br>
-                    94160 Reims<br>
-                    Téléphone: 06 80 01 15 65<br>
-                    Adresse mail : mail@mail.com
+                    <?php $c->text('rue')?><br>
+                    <?php $c->text('code_postal_et_ville')?><br>
+                    Téléphone:<?php $c->text('numero_de_telephone')?><br>
+                    Adresse mail: <?php $c->text('mail')?>
                 </p>
             </div>
         </div>

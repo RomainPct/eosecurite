@@ -10,7 +10,7 @@ $c1 = new CandideCollection ('formations');
             <p><?php $c->text('description_des_formations') ?></p>
         </div>
         <div class="containerFormations__containerTrainings__trainings__characteristics">
-            <h3 class="white">Les spécificités EO Sécurité</h3>
+            <h3 class="white"><?php $c->text('titre_pour_les_specificite_de_eo_securite') ?></h3>
             <p class="white"><?php $c->text('premiere_specificite_eo_securite') ?></p>
             <p class= "white"><?php $c->text('deuxieme_specificite_eo_securite') ?></p>
             <p class="white"><?php $c->text('troisieme_specificite_eo_securite') ?></p>

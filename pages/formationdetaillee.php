@@ -1,5 +1,5 @@
 <?php 
-$c = new CandidePage ('formations_detaillee');
+$c = new CandidePage ('formation_detaillee');
 ?>
 <h1>Les informations des formations de EO Sécurité Reims</h1>
 <main class= "containerFormationDetaillee">

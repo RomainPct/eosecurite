@@ -26,8 +26,8 @@ $c1 = new CandideCollection ('formations');
                 <img src="<?php $c1->image('image_de_la_formation', $id,[400,200]) ?>" alt="">
             </div>
             <div class="containerCardsFormations__cardsTraining__contentFormations">
-                <h3 class="white"><?php $c1->text('nom_de_la_formation', $id) ?></h3>
-                <p class="white"><?php $c1->text('description_de_la_formation', $id) ?></p>
+                <h3 class="white"><?php $c1->text('nom_de_la_formation_numero_x', $id) ?></h3>
+                <p class="white"><?php $c1->text('description_de_la_formation_numero_x', $id) ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
                 <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
@@ -39,8 +39,8 @@ $c1 = new CandideCollection ('formations');
         <div class= "containerCardsFormations__cardsTraining">
             <div class="containerCardsFormations__cardsTraining__imgFormations"></div>
             <div class="containerCardsFormations__cardsTraining__contentFormations">
-                <h3 class="white"><?php $c->text('nom_de_la_formation') ?></h3>
-                <p class="white"><?php $c->text('description_de_la_formation') ?></p>
+                <h3 class="white"><?php $c->text('nom_de_la_formation_numero_1') ?></h3>
+                <p class="white"><?php $c->text('description_de_la_formation_numero_1') ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
                 <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
@@ -49,8 +49,8 @@ $c1 = new CandideCollection ('formations');
         <div class= "containerCardsFormations__cardsTraining">
             <div class="containerCardsFormations__cardsTraining__imgFormations"></div>
             <div class="containerCardsFormations__cardsTraining__contentFormations">
-                <h3 class="white"><?php $c->text('nom_de_la_formation') ?></h3>
-                <p class="white"><?php $c->text('description_de_la_formation') ?></p>
+                <h3 class="white"><?php $c->text('nom_de_la_formation_numero_2') ?></h3>
+                <p class="white"><?php $c->text('description_de_la_formation_numero_2') ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
                 <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
@@ -59,8 +59,8 @@ $c1 = new CandideCollection ('formations');
         <div class= "containerCardsFormations__cardsTraining">
             <div class="containerCardsFormations__cardsTraining__imgFormations"></div>
             <div class="containerCardsFormations__cardsTraining__contentFormations">
-                <h3 class="white"><?php $c->text('nom_de_la_formation') ?></h3>
-                <p class="white"><?php $c->text('description_de_la_formation') ?></p>
+                <h3 class="white"><?php $c->text('nom_de_la_formation_numero_3') ?></h3>
+                <p class="white"><?php $c->text('description_de_la_formation_numero_3') ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
                 <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>

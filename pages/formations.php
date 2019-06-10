@@ -30,7 +30,7 @@ $c1 = new CandideCollection ('formations');
                 <p class="white"><?php $c1->text('description_de_la_formation', $id) ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
-                <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
+                <a class="primaryButton white" href="../formation/<?php echo $id ?>" title="<?php $c1->text('nom_de_la_formation', $id) ?> EO Sécurité">En savoir plus</a>
             </div>
         </div>
         <?php
@@ -43,7 +43,7 @@ $c1 = new CandideCollection ('formations');
                 <p class="white"><?php $c->text('description_de_la_formation') ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
-                <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
+                <a class="primaryButton white" href="formation/0" title="Bouton formations">En savoir plus</a>
             </div>
         </div>
         <div class= "containerCardsFormations__cardsTraining">
@@ -53,7 +53,7 @@ $c1 = new CandideCollection ('formations');
                 <p class="white"><?php $c->text('description_de_la_formation') ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
-                <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
+                <a class="primaryButton white" href="formation/0" title="Bouton formations">En savoir plus</a>
             </div>
         </div>
         <div class= "containerCardsFormations__cardsTraining">
@@ -63,7 +63,7 @@ $c1 = new CandideCollection ('formations');
                 <p class="white"><?php $c->text('description_de_la_formation') ?></p>
             </div>
             <div class="containerCardsFormations__cardsTraining__buttonFormations">
-                <a class="primaryButton white" href="../formationdetaillee" title="Bouton formations">En savoir plus</a>
+                <a class="primaryButton white" href="formation/0" title="Bouton formations">En savoir plus</a>
             </div>
         </div>
     </div>

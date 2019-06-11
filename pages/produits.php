@@ -1,5 +1,6 @@
 <?php
 $c = new CandidePage('produits_et_partenaires');
+$c1 = new CandideCollection('produits');
 ?>
 <main id="part__container">
     <h1>Les partenaires et les produits proposés par EO Sécurité, Reims</h1>
@@ -11,41 +12,20 @@ $c = new CandidePage('produits_et_partenaires');
         <img src="https://picsum.photos/400/250" id="part__rightDisplay">
     </section>
     <section id="part__sliderCont">
-            <div id="part__slider">
+        <div id="part__slider">
+
+            <?php
+                foreach ($c1->avalaibleItemsIds() as $id) {
+            ?>
                 <div class="part__cards">
-                <img src="https://picsum.photos/200/400">
-                <h3>Eratum</h3>
-            </div>
-            <div class="part__cards">
-              <img src="https://picsum.photos/500/300">
-              <h3>Eratum</h3>
-         </div>
-            <div class="part__cards">
-                <img src="https://picsum.photos/100/300">
-                <h3>Eratum</h3>
-            </div>
-         <div class="part__cards">
-                <img src="https://picsum.photos/300/300">
-             <h3>Eratum</h3>
-            </div>
-            <div class="part__cards">
-                <img src="https://picsum.photos/200/300">
-                <h3>Eratum</h3>
-            </div>
-            <div class="part__cards">
-                <img src="https://picsum.photos/400/300">
-                <h3>Eratum</h3>
-            </div>
-            <div class="part__cards">
-                <img src="https://picsum.photos/150/300">
-             <h3>Eratum</h3>
+                     <img src="<?php $c1->image('image_du_produit',$id,[500,300]) ?>" alt="image_du_produit">
+                    <h3><?php $c1->text('nom_du_produit',$id); ?></h3>
+                </div>
+                <?php
+                }
+                ?>
         </div>
-        <div class="part__cards">
-            <img src="https://picsum.photos/250/300">
-            <h3>Eratum</h3>
-        </div>
-        </div>
-    </section>
+    </section> 
     <section id="part__partners">
         <h2>Nos partenaires</h2>
         <div id="part__squareCont">

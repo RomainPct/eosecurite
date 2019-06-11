@@ -5,7 +5,7 @@ $c1 = new CandidePage('accueil');
     <h1>Accueil de l'entreprise EO Sécurité à Reims</h1>
     <div class="containerHome__line">
         <div class="containerHome__line__bigPicture">
-            <img src="<?php $c1->image('image_section_entreprise',[644,397]); ?>" alt="L'entreprise EO Sécurtié">
+            <img src="<?php $c1->image('image_section_entreprise',[960,585]); ?>" alt="L'entreprise EO Sécurtié">
         </div>
         <div class="containerHome__line__textJustifyLeft">
             <h2><?php $c1->text('titre_section_entreprise'); ?></h2>
@@ -18,13 +18,13 @@ $c1 = new CandidePage('accueil');
             <p><?php $c1->text('texte_section_valeurs'); ?></p>
         </div>
         <div class="containerHome__line__bigPicture">
-            <img src="<?php $c1->image('image_section_valeurs',[644,397]); ?>" alt="Nos valeurs">
+            <img src="<?php $c1->image('image_section_valeurs',[960,585]); ?>" alt="Nos valeurs">
         </div>
     </div>
     <div class="containerHome__lastLine">
         <div class="containerHome__lastLine__bloc">
             <div class="containerHome__lastLine__bloc__smallPicture">
-                <img src="<?php $c1->image('image_section_produits',[397,245]); ?>" alt="Nos produits">
+                <img src="<?php $c1->image('image_section_produits',[595,362]); ?>" alt="Nos produits">
             </div>
             <h3 class="white"><?php $c1->text('titre_section_produits'); ?></h3>
             <p class="white"><?php $c1->text('texte_section_produits'); ?></p>
@@ -34,7 +34,7 @@ $c1 = new CandidePage('accueil');
         </div>
         <div class="containerHome__lastLine__bloc lastMarginBottom">
             <div class="containerHome__lastLine__bloc__smallPicture">
-                <img src="<?php $c1->image('image_section_formations',[397,245]); ?>" alt="Nos formations">
+                <img src="<?php $c1->image('image_section_formations',[595,362]); ?>" alt="Nos formations">
             </div>
             <h3 class="white"><?php $c1->text('titre_section_formations'); ?></h3> 
             <p class="white"><?php $c1->text('texte_section_formations'); ?></p>

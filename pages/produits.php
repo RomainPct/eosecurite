@@ -1,6 +1,7 @@
 <?php
 $c = new CandidePage('produits_et_partenaires');
 $c1 = new CandideCollection('produits');
+$c2 = new CandideCollection('partenaires');
 ?>
 <main id="part__container">
     <h1>Les partenaires et les produits proposés par EO Sécurité, Reims</h1>

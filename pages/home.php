@@ -3,7 +3,7 @@ $c1 = new CandidePage('accueil');
 ?>
 <main class="containerHome comingFade">
     <h1>Accueil de l'entreprise EO Sécurité à Reims</h1>
-    <div class="containerHome__line">
+    <div class="containerHome__line comingRight">
         <div class="containerHome__line__bigPicture">
             <img src="<?php $c1->image('image_section_entreprise',[960,585]); ?>" alt="L'entreprise EO Sécurtié">
         </div>
@@ -12,7 +12,7 @@ $c1 = new CandidePage('accueil');
             <p><?php $c1->text('texte_section_entreprise'); ?></p>
         </div>
     </div>
-    <div class="containerHome__line reverse">
+    <div class="containerHome__line reverse comingLeft">
         <div class="containerHome__line__textJustifyRight">
             <h2><?php $c1->text('titre_section_valeurs'); ?></h2>
             <p><?php $c1->text('texte_section_valeurs'); ?></p>
@@ -21,7 +21,7 @@ $c1 = new CandidePage('accueil');
             <img src="<?php $c1->image('image_section_valeurs',[960,585]); ?>" alt="Nos valeurs">
         </div>
     </div>
-    <div class="containerHome__lastLine">
+    <div class="containerHome__lastLine comingRight">
         <div class="containerHome__lastLine__bloc">
             <div class="containerHome__lastLine__bloc__smallPicture">
                 <img src="<?php $c1->image('image_section_produits',[595,362]); ?>" alt="Nos produits">

@@ -63,6 +63,9 @@
                     outline: none;
                     resize: none;
                 }
+                &__textarea.error{
+                    border-color: red;
+                }
                 &__errorSpan {
                     display: block;
                     color: red;
@@ -84,6 +87,9 @@
                         width: 20px;
                         -webkit-appearance: none;
                         align-items: center;
+                    }
+                    &__square.error{
+                        border-color: red;
                     }
                     &__text{
                         align-items: center;

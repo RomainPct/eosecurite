@@ -9,6 +9,10 @@
             height: 49vw;
             width: 87vw;
             margin-bottom: 10px;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
         &__textJustifyLeft{
             margin-left: 0px;
@@ -53,6 +57,10 @@
                 width: 81vw;
                 background-color: #EAEAEA;
                 transform: translate(-26px, -16px);
+                img{
+                    width: auto;
+                    height: 100%;
+                }
             }
             h3{
                 margin-top: 26px;

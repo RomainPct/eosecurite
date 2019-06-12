@@ -40,12 +40,11 @@ $c = new CandidePage('contact');
                 <textarea name="message" cols="30" rows="10" class="contactContainer__section__rightdiv__form__textarea"></textarea>
                 <span class="contactContainer__section__rightdiv__form__errorSpan"></span>
             </div>
-            <div class="contactContainer__section__rightdiv__form__check">
+            <div class="contactContainer__section__rightdiv__form__check"> 
                 <input type="checkbox" name="isACompany" class="contactContainer__section__rightdiv__form__check__square">
-                <div class="check contactContainer__section__rightdiv__form__check__text">
-                    <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
-                </div>
-                <span class="contactContainer__section__rightdiv__form__errorSpan"></span>
+                    <div class="check contactContainer__section__rightdiv__form__check__text">
+                        <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
+                    </div>
             </div>
             <div class="primaryButton contactContainer__section__rightdiv__button">
                 <button class="primaryButton contactContainer__section__rightdiv__button">Envoyer</button>

@@ -38,7 +38,7 @@
                     font-family: $font-primary;
                     font-size: $font-size-body;
                     padding: 10px;
-                    margin-bottom: 20px;
+                    margin-bottom: 16px;
                     background: $background-color;
                     outline: none;
                 }
@@ -60,6 +60,7 @@
                     font-family: $font-primary;
                     font-size: $font-size-body;
                     padding: 10px;
+                    margin-bottom: 16px;
                     outline: none;
                     resize: none;
                 }
@@ -71,7 +72,7 @@
                     color: red;
                     margin-top: 0;
                     margin-left: 10px;
-                    transform: translateY(-20px);
+                    transform: translateY(-16px);
                 }
                 &__check{
                     display: flex;
@@ -87,6 +88,7 @@
                         width: 20px;
                         -webkit-appearance: none;
                         align-items: center;
+                        outline: none;
                     }
                     &__square.error{
                         border-color: red;
@@ -94,6 +96,9 @@
                     &__text{
                         align-items: center;
                         padding: 10px;
+                    }
+                    &__text.error{
+                        color: red;
                     }
                 }
             }

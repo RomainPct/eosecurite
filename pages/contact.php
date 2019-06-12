@@ -23,22 +23,22 @@ $c = new CandidePage('contact');
             <div>
                 <label for="name" class="contactContainer__section__rightdiv__form__text">Nom complet</label>
                 <input type="text" name="name" placeholder="ex: Jérémy Floriac" class="contactContainer__section__rightdiv__form__input">
-                <span class="error"></span>
+                <span class="contactContainer__section__rightdiv__form__errorSpan"></span>
             </div>
             <div>
                 <label for="company" class="contactContainer__section__rightdiv__form__text">Entreprise</label>
                 <input type="text" name="company" placeholder="ex: EO Sércurité" class="contactContainer__section__rightdiv__form__input">
-                <span class="error"></span>
+                <span class="contactContainer__section__rightdiv__form__errorSpan"></span>
             </div>
             <div>
                 <label for="email" class="email contactContainer__section__rightdiv__form__text">Adresse mail</label>
                 <input type="email" name="email" placeholder="ex: jeremy@mail.com" class="contactContainer__section__rightdiv__form__input">
-                <span class="error"></span>
+                <span class="contactContainer__section__rightdiv__form__errorSpan"></span>
             </div>
             <div>
                 <label for="message" class="contactContainer__section__rightdiv__form__text">Message</label>
                 <textarea name="message" cols="30" rows="10" class="contactContainer__section__rightdiv__form__textarea"></textarea>
-                <span class="error"></span>
+                <span class="contactContainer__section__rightdiv__form__errorSpan"></span>
             </div>
             <div class="contactContainer__section__rightdiv__form__check">
                 <input type="checkbox" name="isACompany" class="contactContainer__section__rightdiv__form__check__square">

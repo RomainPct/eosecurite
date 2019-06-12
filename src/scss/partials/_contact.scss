@@ -42,9 +42,12 @@
                     background: $background-color;
                     outline: none;
                 }
-                &__input:invalid{
+                &__input.error {
                     border-color: red;
                 }
+                // &__input:invalid{
+                //     border-color: red;
+                // }
                 &__input:focus{
                     border-color: $color-primary;
                 }
@@ -59,6 +62,13 @@
                     padding: 10px;
                     outline: none;
                     resize: none;
+                }
+                &__errorSpan {
+                    display: block;
+                    color: red;
+                    margin-top: 0;
+                    margin-left: 10px;
+                    transform: translateY(-20px);
                 }
                 &__check{
                     display: flex;
@@ -87,18 +97,4 @@
             }
         }
     }
-}
-.error {
-    width  : 100%;
-    padding: 0;
-   
-    font-size: 80%;
-    color: white;
-    background-color: #900;
-    border-radius: 0 0 5px 5px;
-    box-sizing: border-box;
-}
-
-.error .active{
-    padding: 3em;
 }

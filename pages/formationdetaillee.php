@@ -16,8 +16,8 @@ $c = new CandideCollectionItem('formations', $_GET["id"]);
     <div class="containerFormationDetaillee__formationAskQuotation">
         <div class="containerFormationDetaillee__formationAskQuotation__informationQuotation">
             <p><?php $c->text('principe_de_la_formation'); ?></p>
-            <p><strong>Public:</strong><?php $c->text('public_de_l_entreprise'); ?></p>
-            <p><strong>Durée:</strong><?php $c->text('nombre_de_jours'); ?></p>
+            <p><strong>Public:</strong><?php $c->text('public_de_la_formation'); ?></p>
+            <p><strong>Durée:</strong><?php $c->text('duree_de_la_formation'); ?></p>
             <p><strong>Lieu:</strong><?php $c->text('lieu_de_la_formation'); ?></p>
             <div class="containerFormationDetaillee__formationAskQuotation__informationQuotation__buttonQuotation">
                 <a class="primaryButton white" href="../contact" title="Bouton formation detaillee">Demander un devis</a>

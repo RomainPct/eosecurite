@@ -19,7 +19,7 @@
 
 @keyframes left{
     0%{
-        transform: translateX(-100vw);
+        transform: translateX(-20vw);
     }
     100%{
         transform: translateX(0vw);
@@ -33,7 +33,7 @@
 
 @keyframes right{
     0%{
-        transform: translateX(100vw);
+        transform: translateX(20vw);
     }
     100%{
         transform: translateX(0vw);

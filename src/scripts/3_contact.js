@@ -37,41 +37,43 @@ let form = document.querySelector('form')
 let inputs = document.querySelectorAll('input')
 let check = document.querySelector('.check')
 let textarea = document.querySelector('textarea')
-let error = document.querySelectorAll('.error')
+let errors = document.querySelectorAll('.error')
 
 inputs.forEach(function(input){
     input.addEventListener("input", function(e){
-        error.innerHTML = "Champs invalide !"
-        error.classList.remove("error")
-        console.log(error)
+        input.classList.remove('error')
+        input.parentElement.lastElementChild.innerHTML = ""
     })
 })
 
 textarea.addEventListener("input", function(textarea){
-    error.innerHTML = "Champs invalide !"
-    error.classList.remove("error")
+    // errors.innerHTML = "Champs invalide !"
+    // errors.classList.remove("error")
 })
 
 form.addEventListener("submit", function(e){
-    if(inputs[0].value.lenght <= 0) {
-        error.innerHTML = "Champs invalide !"
-        error.classList.add("error active")
+    console.log("submit")
+    if(inputs[0].value.length <= 0) {
+        inputs[0].classList.add('error')
+        inputs[0].parentElement.lastElementChild.innerHTML = "Erreur"
         e.preventDefault()
     }
-    else if(inputs[1].value.lenght <= 0) {
-        error.innerHTML = "Champs invalide !"
-        error.classList.add("error active")
+    else if(inputs[1].value.length <= 0) {
+        // errors.innerHTML = "Champs invalide !"
+        // errors.classList.add("error active")
         e.preventDefault()
     }
-    else if(inputs[2].value.lenght <= 0) {
-        error.innerHTML = "Champs invalide !"
-        error.classList.add("error active")
+    else if(inputs[2].value.length <= 0) { // Vérifier que c'est un email
+        // errors.innerHTML = "Champs invalide !"
+        // errors.classList.add("error active")
         e.preventDefault()
     }
-    else if(inputs[3].value.lenght <= 0) {
-        error.innerHTML = "Champs invalide !"
-        error.classList.add("error active")
+    else if(textarea.value.length <= 0) {
         e.preventDefault()
-        console.log(e)
     }
-},)
+    else if(inputs[3].checked <= 0) {
+        // errors.innerHTML = "Champs invalide !"
+        // errors.classList.add("error active")
+        e.preventDefault()
+    }
+})

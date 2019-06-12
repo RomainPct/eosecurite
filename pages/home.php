@@ -1,7 +1,7 @@
 <?php 
 $c1 = new CandidePage('accueil');
 ?>
-<main class="containerHome">
+<main class="containerHome comingFade">
     <h1>Accueil de l'entreprise EO Sécurité à Reims</h1>
     <div class="containerHome__line">
         <div class="containerHome__line__bigPicture">

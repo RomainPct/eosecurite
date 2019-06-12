@@ -2,7 +2,7 @@
 $c = new CandideCollectionItem('formations', $_GET["id"]);
 ?>
 <h1>Les informations des formations de EO Sécurité Reims</h1>
-<main class= "containerFormationDetaillee">
+<main class= "containerFormationDetaillee comingFade">
     <div class="containerFormationDetaillee__contentFormationDetaillee">
         <div class="containerFormationDetaillee__contentFormationDetaillee__titleFormationDetaillee">
             <h2><?php $c->text('nom_de_la_formation'); ?></h2>

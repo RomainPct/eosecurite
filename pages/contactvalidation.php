@@ -1,5 +1,5 @@
 <h1>contacter eosécurité reims</h1>
-<main class="contactvalidation">
+<main class="contactvalidation comingFade">
     <div class="contactvalidation__text">
         <h2>Votre message a bien été enoyé</h2>
     </div>

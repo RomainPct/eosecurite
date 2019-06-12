@@ -4,14 +4,14 @@ $c1 = new CandideCollection('produits');
 ?>
 <main id="part__container" class="comingFade">
     <h1>Les partenaires et les produits proposés par EO Sécurité, Reims</h1>
-    <section id="part__displayContainer">
+    <section id="part__displayContainer" class="comingLeft">
         <div id="part__leftCont">
             <h2>Nos Produits</h2>
             <p>Texte qualité des produits et des partenaires + avantages de travailler avec EO Sécurité pour ce type de produits .Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur</p>
         </div>
         <img src="https://picsum.photos/400/250" id="part__rightDisplay">
     </section>
-    <section id="part__sliderCont">
+    <section id="part__sliderCont" class="comingRight">
         <div id="part__slider">
 
             <?php
@@ -26,7 +26,7 @@ $c1 = new CandideCollection('produits');
                 ?>
         </div>
     </section> 
-    <section id="part__partners">
+    <section id="part__partners" class="comingLeft">
         <h2>Nos partenaires</h2>
         <div id="part__squareCont">
             <div class="part__partnersSquare"></div>

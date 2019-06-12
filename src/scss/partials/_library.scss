@@ -1,6 +1,6 @@
 //OPEN ANIMATION
 .comingFade{
-    animation: fade 1s cubic-bezier(0.4, 0.0, 0.2, 1);
+    animation: fade 2s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 @keyframes fade{
@@ -14,7 +14,7 @@
 
 //OPEN LEFT
 .comingLeft{
-    animation: left 1s cubic-bezier(0.4, 0.0, 0.2, 1);
+    animation: left 2s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 @keyframes left{
@@ -28,7 +28,7 @@
 
 //OPEN RIGHT
 .comingRight{
-    animation: 1s right cubic-bezier(0.4, 0.0, 0.2, 1);
+    animation: right 2s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 @keyframes right{

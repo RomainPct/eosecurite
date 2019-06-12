@@ -74,9 +74,9 @@ form.addEventListener("submit", function(e){
         textarea.parentElement.lastElementChild.innerHTML = "Erreur"
         e.preventDefault()
     }
-    if(inputs[4].checked <= 0) {
-        inputs.classList.add('error')
-        inputs.parentElement.lastElementChild.innerHTML = "Vous n'avez pas cochez cette case."
+    if(!inputs[3].checked) {
+        inputs[3].classList.add('error')
+        inputs[3].parentElement.lastElementChild.innerHTML = "Vous n'avez pas cochez cette case."
         e.preventDefault()
     }
 })

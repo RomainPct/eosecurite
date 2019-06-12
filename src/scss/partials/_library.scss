@@ -1,5 +1,12 @@
+//OPEN ANIMATION
+.comingFade
+{
+  opacity: 0;
+}
+
 //PRIMARY BUTTON
 a.primaryButton, button.primaryButton {
+    outline: none;
     -webkit-appearance: none;
     font: $font-primary;
     font-weight: bold;

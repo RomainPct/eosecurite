@@ -2,23 +2,20 @@
     padding-bottom: 42px;
     background-image: none;
     &__containerTrainings{
-        margin: 42px;
+        margin:16px 16px 42px;
         display: flex;
         flex-direction: column;
         align-items: center;
         &__trainings{
-            width: 87vw;
-            margin: 0px 26px;
+            width: auto;
             &__characteristics{
                 width: 100vw;
                 margin: 16px;
                 padding: 26px;
+                box-sizing: border-box;
                 background-color: $background-color-dark;
-                h3{
-                    padding-left: 68px;
-                }
                 p{
-                    padding-left: 84px;
+                    padding-left: 0px;
                 }
             }
         }
@@ -28,13 +25,13 @@
 .containerCardsFormations{
     display: flex;
     flex-direction: column;
-    margin: 10px 26px;
+    margin: 10px 16px;
     &__cardsTraining{
-        width: 81vw;
+        width: auto;
         background-color: $background-color-dark;
-        margin: 42px 0px 0px 26px;
+        margin: 42px 0px 0px 16px;
         &__imgFormations{
-            height: 57vw;
+            height: 67vw;
             top: 0;
             background-color: #EAEAEA;
             transform: translate(-26px, -16px);

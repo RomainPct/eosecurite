@@ -1,7 +1,6 @@
 <?php
 $c = new CandidePage('produits_et_partenaires');
 $c1 = new CandideCollection('produits');
-$c2 = new CandideCollection('partenaires');
 ?>
 <main id="part__container">
     <h1>Les partenaires et les produits proposés par EO Sécurité, Reims</h1>
@@ -16,10 +15,10 @@ $c2 = new CandideCollection('partenaires');
         <div id="part__slider">
 
             <?php
-                foreach ($c1->avalaibleItemsIds() as $id) {
+                foreach ($c1->avalaibleItemIds() as $id) {
             ?>
                 <div class="part__cards">
-                     <img src="<?php $c1->image('image_du_produit',$id,[500,300]) ?>" alt="image_du_produit">
+                     <img src="<?php $c1->image('image_du_produit',$id,[130,130]) ?>" alt="image_du_produit">
                     <h3><?php $c1->text('nom_du_produit',$id); ?></h3>
                 </div>
                 <?php

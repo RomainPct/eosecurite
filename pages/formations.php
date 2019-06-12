@@ -3,7 +3,7 @@ $c = new CandidePage('formations');
 $c1 = new CandideCollection('formations');
 ?>
 <h1>Les formations de EO Sécurité Reims</h1>
-<main class="containerFormations">
+<main class="containerFormations comingFade">
     <div class="containerFormations__containerTrainings">
         <div class="containerFormations__containerTrainings__trainings">
             <h2><?php $c->text('titre_pour_les_formations'); ?></h2>

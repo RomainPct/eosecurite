@@ -2,7 +2,7 @@
 $c = new CandidePage('produits_et_partenaires');
 $c1 = new CandideCollection('produits');
 ?>
-<main id="part__container">
+<main id="part__container" class="comingFade">
     <h1>Les partenaires et les produits proposés par EO Sécurité, Reims</h1>
     <section id="part__displayContainer">
         <div id="part__leftCont">

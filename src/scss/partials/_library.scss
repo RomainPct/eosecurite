@@ -1,7 +1,15 @@
 //OPEN ANIMATION
-.comingFade
-{
-  opacity: 0;
+.comingFade{
+    animation: fade 1s ease-in;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 //PRIMARY BUTTON

@@ -47,33 +47,36 @@ inputs.forEach(function(input){
 })
 
 textarea.addEventListener("input", function(textarea){
-    // errors.innerHTML = "Champs invalide !"
-    // errors.classList.remove("error")
+    textarea.classList.remove('error')
+    textarea.parentElement.lastElementChild.innerHTML = ""
 })
 
 form.addEventListener("submit", function(e){
     console.log("submit")
+    console.log(inputs)
     if(inputs[0].value.length <= 0) {
         inputs[0].classList.add('error')
         inputs[0].parentElement.lastElementChild.innerHTML = "Erreur"
         e.preventDefault()
     }
-    else if(inputs[1].value.length <= 0) {
-        // errors.innerHTML = "Champs invalide !"
-        // errors.classList.add("error active")
+    if(inputs[1].value.length <= 0) {
+        inputs[1].classList.add('error')
+        inputs[1].parentElement.lastElementChild.innerHTML = "Erreur"
         e.preventDefault()
     }
-    else if(inputs[2].value.length <= 0) { // Vérifier que c'est un email
-        // errors.innerHTML = "Champs invalide !"
-        // errors.classList.add("error active")
+    if(inputs[2].value.length <= 0) { // Vérifier que c'est un email
+        inputs[2].classList.add('error')
+        inputs[2].parentElement.lastElementChild.innerHTML = "Erreur"
         e.preventDefault()
     }
-    else if(textarea.value.length <= 0) {
+    if(textarea.value.length <= 0) {
+        textarea.classList.add('error')
+        textarea.parentElement.lastElementChild.innerHTML = "Erreur"
         e.preventDefault()
     }
-    else if(inputs[3].checked <= 0) {
-        // errors.innerHTML = "Champs invalide !"
-        // errors.classList.add("error active")
+    if(inputs[4].checked <= 0) {
+        inputs.classList.add('error')
+        inputs.parentElement.lastElementChild.innerHTML = "Vous n'avez pas cochez cette case."
         e.preventDefault()
     }
 })

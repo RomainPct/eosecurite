@@ -1,6 +1,6 @@
 //OPEN ANIMATION
 .comingFade{
-    animation: fade 1s ease-in;
+    animation: fade 1s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 @keyframes fade{
@@ -9,6 +9,34 @@
     }
     100%{
         opacity: 1;
+    }
+}
+
+//OPEN LEFT
+.comingLeft{
+    animation: left 1s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes left{
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+//OPEN RIGHT
+.comingRight{
+    animation: 1s right cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes right{
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(0vw);
     }
 }
 

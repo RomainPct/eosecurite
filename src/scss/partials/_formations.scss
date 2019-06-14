@@ -25,6 +25,7 @@
 
 .containerCardsFormations{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 68px 110px 0px;
     &__cardsTraining{

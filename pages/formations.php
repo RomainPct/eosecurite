@@ -4,7 +4,7 @@ $c1 = new CandideCollection('formations');
 ?>
 <h1>Les formations de EO Sécurité Reims</h1>
 <main class="containerFormations comingFade">
-    <div class="containerFormations__containerTrainings comingRight">
+    <div class="containerFormations__containerTrainings">
         <div class="containerFormations__containerTrainings__trainings">
             <h2><?php $c->text('titre_pour_les_formations'); ?></h2>
             <p><?php $c->text('description_des_formations'); ?></p>
@@ -17,7 +17,7 @@ $c1 = new CandideCollection('formations');
         </div>
     </div>
 
-    <div class="containerCardsFormations comingLeft">
+    <div class="containerCardsFormations">
     <?php 
     foreach(array_reverse($c1->avalaibleItemIds()) as $id){
         ?>

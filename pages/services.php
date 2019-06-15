@@ -1,5 +1,5 @@
 <h1>services de eosécurité</h1>
-<main class="servicesContainer">
+<main class="servicesContainer comingFade">
     <section class="servicesContainer__servicesSection">
         <div class="servicesContainer__servicesSection__cattop">
             <h2>Nos services</h2>

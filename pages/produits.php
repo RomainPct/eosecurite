@@ -19,7 +19,7 @@ $c1 = new CandideCollection('produits');
             ?>
                 <div class="part__cards">
                      <img src="<?php $c1->image('image_du_produit',$id,[130,130]) ?>" alt="image_du_produit">
-                    <h3><?php $c1->text('nom_du_produit',$id); ?></h3>
+                    <p><?php $c1->text('nom_du_produit',$id); ?></p>
                 </div>
                 <?php
                 }
@@ -49,8 +49,6 @@ $c1 = new CandideCollection('produits');
             <div class="part__partnersSquare"> <img src="assets/images/partenaires/workzone.jpg" alt="Workzone"></div>
             <div class="part__partnersSquare"> <img src="assets/images/partenaires/engel.png" alt="Engel" width="130px"></div>
             <div class="part__partnersSquare"> <img src="assets/images/partenaires/cepovett.png" alt="Cepovett"></div>
-            <div class="part__partnersSquare"> <img src="" alt=""></div>
-            <div class="part__partnersSquare"> <img src="" alt=""></div>
         </div>
     </section>
     <section id="part__contact">

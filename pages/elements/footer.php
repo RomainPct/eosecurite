@@ -1,5 +1,5 @@
 <footer id="footer_container">
-            <img src="assets/images/logo/logo_small.png" alt="Logo EO sécurité"> 
+            <img src="/assets/images/logo/logo_small.png" alt="Logo EO sécurité"> 
             <div id="footer_links">
                 <ul>  
                     <li><a href="/home" title="Accueil">L'entreprise</a></li>

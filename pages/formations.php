@@ -19,7 +19,7 @@ $c1 = new CandideCollection('formations');
 
     <div class="containerCardsFormations comingLeft">
     <?php 
-    foreach($c1->avalaibleItemIds() as $id){
+    foreach(array_reverse($c1->avalaibleItemIds()) as $id){
         ?>
         <div class= "containerCardsFormations__cardsTraining">
             <div class="containerCardsFormations__cardsTraining__imgFormations">

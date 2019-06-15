@@ -3,7 +3,7 @@ $c = new CandideCollectionItem('formations', $_GET["id"]);
 ?>
 <h1>Les informations des formations de EO Sécurité Reims</h1>
 <main class= "containerFormationDetaillee comingFade">
-    <div class="containerFormationDetaillee__contentFormationDetaillee comingLeft">
+    <div class="containerFormationDetaillee__contentFormationDetaillee">
         <div class="containerFormationDetaillee__contentFormationDetaillee__titleFormationDetaillee">
             <h2><?php $c->text('nom_de_la_formation'); ?></h2>
             <p><?php $c->text('description_de_la_formation'); ?></p>
@@ -13,7 +13,7 @@ $c = new CandideCollectionItem('formations', $_GET["id"]);
                 <?php $c->text('descriptif_complet_de_la_formation', true); ?>
         </div>
     </div>
-    <div class="containerFormationDetaillee__formationAskQuotation comingRight">
+    <div class="containerFormationDetaillee__formationAskQuotation">
         <div class="containerFormationDetaillee__formationAskQuotation__informationQuotation">
             <p><?php $c->text('principe_de_la_formation'); ?></p>
             <p><strong>Public : </strong><?php $c->text('public_de_la_formation'); ?></p>

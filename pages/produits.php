@@ -4,14 +4,14 @@ $c1 = new CandideCollection('produits');
 ?>
 <main id="part__container" class="comingFade">
     <h1>Les partenaires et les produits proposés par EO Sécurité, Reims</h1>
-    <section id="part__displayContainer" class="comingRight">
+    <section id="part__displayContainer">
         <div id="part__leftCont">
             <h2><?php $c->text('titres_page_produits'); ?></h2>
             <p><?php $c->text('description_page_produits'); ?></p>
         </div>
         <img src="<?php $c->image('image_page_produit',[500,360]) ?>" alt="image_page_produit" id="part__rightDisplay">
     </section>
-    <section id="part__sliderCont" class="comingLeft">
+    <section id="part__sliderCont">
         <div id="part__slider">
 
             <?php
@@ -26,7 +26,7 @@ $c1 = new CandideCollection('produits');
                 ?>
         </div>
     </section> 
-    <section id="part__partners" class="comingRight">
+    <section id="part__partners">
         <h2>Nos partenaires</h2>
         <div id="part__squareCont">
             <div class="part__partnersSquare"> <img src="assets/images/partenaires/defibrion.png" alt="Defibrion"></div>

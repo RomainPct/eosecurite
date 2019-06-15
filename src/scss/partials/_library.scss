@@ -6,37 +6,11 @@
 @keyframes fade{
     0%{
         opacity: 0;
+        transform: translateY(10vh);
     }
     100%{
         opacity: 1;
-    }
-}
-
-//OPEN LEFT
-.comingLeft{
-    animation: left 2s cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-
-@keyframes left{
-    0%{
-        transform: translateX(-20vw);
-    }
-    100%{
-        transform: translateX(0vw);
-    }
-}
-
-//OPEN RIGHT
-.comingRight{
-    animation: right 2s cubic-bezier(0.4, 0.0, 0.2, 1);
-}
-
-@keyframes right{
-    0%{
-        transform: translateX(20vw);
-    }
-    100%{
-        transform: translateX(0vw);
+        transform: translateY(0vh);
     }
 }
 

@@ -1,5 +1,5 @@
 <nav>
-    <a href="/home" title="Accueil"><img src="assets/images/logo_vertical/eosecurite.png" alt="Logo EO sécurité"></a>
+    <a href="/home" title="Accueil"><img src="/assets/images/logo_vertical/eosecurite.png" alt="Logo EO sécurité"></a>
     <ul class="subMenu">
         <li><a class="hoverOpacity" href="/home" title="Accueil">L'entreprise</a></li>
         <li><a class="hoverOpacity" href="/produits" title="Produits EO sécurité">Nos produits</a></li>

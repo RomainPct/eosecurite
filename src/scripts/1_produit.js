@@ -15,7 +15,7 @@ var offScreen = prctSlider - 100
 
 
 // Detecter le mouvement de la souris sur la div #part__sliderCont
-    slider.onmousemove = function(e){
+    window.onmousemove = function(e){
         let rapportWidth = (e.clientX / window.innerWidth) * offScreen
         slider.style.left = -(rapportWidth)+ "vw"
     }

@@ -1,5 +1,48 @@
+//OPEN ANIMATION
+.comingFade{
+    animation: fade 2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+//OPEN LEFT
+.comingLeft{
+    animation: left 2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes left{
+    0%{
+        transform: translateX(-20vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+//OPEN RIGHT
+.comingRight{
+    animation: right 2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes right{
+    0%{
+        transform: translateX(20vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
 //PRIMARY BUTTON
 a.primaryButton, button.primaryButton {
+    outline: none;
     -webkit-appearance: none;
     font: $font-primary;
     font-weight: bold;

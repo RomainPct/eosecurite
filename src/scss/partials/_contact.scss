@@ -38,13 +38,16 @@
                     font-family: $font-primary;
                     font-size: $font-size-body;
                     padding: 10px;
-                    margin-bottom: 20px;
+                    margin-bottom: 16px;
                     background: $background-color;
                     outline: none;
                 }
-                &__input:invalid{
+                &__input.error {
                     border-color: red;
                 }
+                // &__input:invalid{
+                //     border-color: red;
+                // }
                 &__input:focus{
                     border-color: $color-primary;
                 }
@@ -57,8 +60,19 @@
                     font-family: $font-primary;
                     font-size: $font-size-body;
                     padding: 10px;
+                    margin-bottom: 16px;
                     outline: none;
                     resize: none;
+                }
+                &__textarea.error{
+                    border-color: red;
+                }
+                &__errorSpan {
+                    display: block;
+                    color: red;
+                    margin-top: 0;
+                    margin-left: 10px;
+                    transform: translateY(-16px);
                 }
                 &__check{
                     display: flex;
@@ -74,10 +88,17 @@
                         width: 20px;
                         -webkit-appearance: none;
                         align-items: center;
+                        outline: none;
+                    }
+                    &__square.error{
+                        border-color: red;
                     }
                     &__text{
                         align-items: center;
                         padding: 10px;
+                    }
+                    &__text.error{
+                        color: red;
                     }
                 }
             }
@@ -87,18 +108,4 @@
             }
         }
     }
-}
-.error {
-    width  : 100%;
-    padding: 0;
-   
-    font-size: 80%;
-    color: white;
-    background-color: #900;
-    border-radius: 0 0 5px 5px;
-    box-sizing: border-box;
-}
-
-.error .active{
-    padding: 3em;
 }

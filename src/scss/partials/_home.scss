@@ -14,10 +14,6 @@
         &__bigPicture{
             height: 28vw;
             width: 45vw;
-            background-color: #EAEAEA;
-            img{
-                width: 100%;
-            }
         }
         &__textJustifyLeft{
             flex: 3;
@@ -53,11 +49,7 @@
             &__smallPicture{
                 height: 19vw;
                 width: 31vw;
-                background-color: #EAEAEA;
                 transform: translate(-26px, -16px);
-                img{
-                    width: 100%;
-                }
             }
             h3{
                 margin-top: 26px;

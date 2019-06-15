@@ -1,0 +1,33 @@
+.servicesContainer{
+    background-image: url(../../../assets/images/vagues/vague_services.svg);
+    background-position: center bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    &__servicesSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 330px;
+        padding-right: 330px;
+        &__cattop{
+            margin: 16px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 32px;
+        }
+        &__cat{
+            margin: 16px;
+            background-color: $background-color-dark;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 16px;
+
+        }
+        &__button{
+            text-align: center;
+            margin: 16px;
+            margin-bottom: 110px;
+        }
+    }
+}

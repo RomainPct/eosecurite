@@ -1,31 +1,25 @@
 <?php 
 $c1 = new CandidePage('accueil');
 ?>
-<main class="containerHome">
+<main class="containerHome comingFade">
     <h1>Accueil de l'entreprise EO Sécurité à Reims</h1>
-    <div class="containerHome__line">
-        <div class="containerHome__line__bigPicture">
-            <img src="<?php $c1->image('image_section_entreprise',[960,585]); ?>" alt="L'entreprise EO Sécurtié">
-        </div>
+    <div class="containerHome__line comingLeft">
+        <img class="containerHome__line__bigPicture" src="<?php $c1->image('image_section_entreprise',[960,585]); ?>" alt="L'entreprise EO Sécurtié">
         <div class="containerHome__line__textJustifyLeft">
             <h2><?php $c1->text('titre_section_entreprise'); ?></h2>
             <p><?php $c1->text('texte_section_entreprise'); ?></p>
         </div>
     </div>
-    <div class="containerHome__line reverse">
+    <div class="containerHome__line reverse comingRight">
         <div class="containerHome__line__textJustifyRight">
             <h2><?php $c1->text('titre_section_valeurs'); ?></h2>
             <p><?php $c1->text('texte_section_valeurs'); ?></p>
         </div>
-        <div class="containerHome__line__bigPicture">
-            <img src="<?php $c1->image('image_section_valeurs',[960,585]); ?>" alt="Nos valeurs">
-        </div>
+        <img class="containerHome__line__bigPicture" src="<?php $c1->image('image_section_valeurs',[960,585]); ?>" alt="Nos valeurs">
     </div>
-    <div class="containerHome__lastLine">
+    <div class="containerHome__lastLine comingLeft">
         <div class="containerHome__lastLine__bloc">
-            <div class="containerHome__lastLine__bloc__smallPicture">
-                <img src="<?php $c1->image('image_section_produits',[595,362]); ?>" alt="Nos produits">
-            </div>
+            <img class="containerHome__lastLine__bloc__smallPicture" src="<?php $c1->image('image_section_produits',[595,362]); ?>" alt="Nos produits">
             <h3 class="white"><?php $c1->text('titre_section_produits'); ?></h3>
             <p class="white"><?php $c1->text('texte_section_produits'); ?></p>
             <div class="containerHome__lastLine__bloc__buttonContainer">
@@ -33,9 +27,7 @@ $c1 = new CandidePage('accueil');
             </div>
         </div>
         <div class="containerHome__lastLine__bloc lastMarginBottom">
-            <div class="containerHome__lastLine__bloc__smallPicture">
-                <img src="<?php $c1->image('image_section_formations',[595,362]); ?>" alt="Nos formations">
-            </div>
+            <img class="containerHome__lastLine__bloc__smallPicture" src="<?php $c1->image('image_section_formations',[595,362]); ?>" alt="Nos formations">
             <h3 class="white"><?php $c1->text('titre_section_formations'); ?></h3> 
             <p class="white"><?php $c1->text('texte_section_formations'); ?></p>
             <div class="containerHome__lastLine__bloc__buttonContainer">

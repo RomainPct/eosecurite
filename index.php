@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="/assets/styles/main.min.css">
 </head>
 <body>
-    <?php include 'pages/elements/header.php'; ?>
     <?php include 'php/rooter.php'; ?>
+    <?php include 'pages/elements/header.php'; ?>
     <?php include 'pages/elements/footer.php'; ?>
     <script src="/assets/scripts/main.min.js"></script>
 </body>

@@ -1,0 +1,12 @@
+.servicesContainer{
+    background: none;
+    &__servicesSection{
+       padding: 0 26px;
+        &__cattop{
+            padding-top: 0;
+        }
+        &__cat{
+            padding-top: 0;
+        }
+    }
+}

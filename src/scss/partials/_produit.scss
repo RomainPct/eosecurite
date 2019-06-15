@@ -62,8 +62,11 @@
 
             width: 10vw;
             height: 10vw;
-            background-color: $color-primary;
+            background-color: white;
             margin-bottom: 26px;
+            img{
+                max-width: 100%;
+            }
 
         }
     }

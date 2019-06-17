@@ -45,9 +45,6 @@
                 &__input.error {
                     border-color: red;
                 }
-                // &__input:invalid{
-                //     border-color: red;
-                // }
                 &__input:focus{
                     border-color: $color-primary;
                 }
@@ -63,6 +60,7 @@
                     margin-bottom: 16px;
                     outline: none;
                     resize: none;
+                    color: #FDFDFD;
                 }
                 &__textarea.error{
                     border-color: red;

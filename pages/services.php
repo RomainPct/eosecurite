@@ -21,7 +21,7 @@ $c1 = new CandideCollection('services');
         }
         ?> 
         <div class="primaryButton servicesContainer__servicesSection__button">
-            <button class="primaryButton contactContainer__section__rightdiv__button">Prendre contact avec EO Sécurité</button>
+            <a class="primaryButton contactContainer__section__rightdiv__button" href="/contact" title="Contact EO sécurité">Prendre contact avec EO Sécurité</a>
         </div>
     </section>
 </main>

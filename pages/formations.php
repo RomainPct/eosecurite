@@ -23,7 +23,7 @@ $c1 = new CandideCollection('formations');
         ?>
         <div class= "containerCardsFormations__cardsTraining">
             <div class="containerCardsFormations__cardsTraining__imgFormations">
-                <img src="<?php $c1->image('image_de_la_formation', $id,[400,200]) ?>" alt="">
+                <img src="<?php $c1->image('image_de_la_formation', $id,[400,280]) ?>" alt="">
             </div>
             <div class="containerCardsFormations__cardsTraining__contentFormations">
                 <h3 class="white"><?php $c1->text('nom_de_la_formation', $id); ?></h3>

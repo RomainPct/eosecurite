@@ -33,10 +33,12 @@
         background-color: $background-color-dark;
         margin: 16px 13px;
         &__imgFormations{
-            height: 20vw;
-            top: 0;
+            height: 16.1vw;
             background-color: #EAEAEA;
             transform: translate(-26px, -16px);
+            img {
+                height: 100%;
+            }
         }
         &__contentFormations{
             padding: 16px;

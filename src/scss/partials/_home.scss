@@ -19,7 +19,7 @@
             flex: 3;
             margin-left: 110px;
             p{
-                max-width: 25vw;
+                max-width: 30vw;
             }
         }
         &__textJustifyRight{
@@ -31,24 +31,24 @@
             
             flex-direction: column;
             p{
-                max-width: 25vw;
+                max-width: 30vw;
             }
         }
     }
     &__lastLine{
         margin-top: 110px;
-        margin-left: 110px;
-        margin-right: 110px;
+        margin-left: 114px;
+        margin-right: 114px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         &__bloc{
             background-color: $background-color-dark;
-            width: 31vw;
+            width: 23vw;
             margin-bottom: 110px;
             &__smallPicture{
                 height: 19vw;
-                width: 31vw;
+                width: 23vw;
                 transform: translate(-26px, -16px);
             }
             h3{

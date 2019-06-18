@@ -26,6 +26,14 @@ $c1 = new CandidePage('accueil');
                 <a class="primaryButton" href="../produits">Découvrir nos produits</a>
             </div>
         </div>
+        <div class="containerHome__lastLine__bloc">
+            <img class="containerHome__lastLine__bloc__smallPicture" src="<?php $c1->image('image_section_services',[595,362]); ?>" alt="Nos services">
+            <h3 class="white"><?php $c1->text('titre_section_services'); ?></h3>
+            <p class="white"><?php $c1->text('texte_section_services'); ?></p>
+            <div class="containerHome__lastLine__bloc__buttonContainer">
+                <a class="primaryButton" href="../services">Découvrir nos services</a>
+            </div>
+        </div>
         <div class="containerHome__lastLine__bloc lastMarginBottom">
             <img class="containerHome__lastLine__bloc__smallPicture" src="<?php $c1->image('image_section_formations',[595,362]); ?>" alt="Nos formations">
             <h3 class="white"><?php $c1->text('titre_section_formations'); ?></h3> 

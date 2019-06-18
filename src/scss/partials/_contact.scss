@@ -60,7 +60,7 @@
                     margin-bottom: 16px;
                     outline: none;
                     resize: none;
-                    color: #FDFDFD;
+                    background-color: #FDFDFD;
                 }
                 &__textarea.error{
                     border-color: red;
@@ -75,7 +75,6 @@
                 &__check{
                     display: flex;
                     align-items: center;
-                    margin-top: 26px;
                     &__square:checked{
                         border-color: $color-primary;
                         background-color: $background-color-dark;
@@ -93,7 +92,7 @@
                     }
                     &__text{
                         align-items: center;
-                        padding: 10px;
+                        padding-left: 10px;
                     }
                     &__text.error{
                         color: red;

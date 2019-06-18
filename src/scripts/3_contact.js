@@ -1,4 +1,3 @@
-
 let form = document.querySelector('form')
 let inputs = document.querySelectorAll('input')
 let check = document.querySelector('.check')
@@ -34,7 +33,7 @@ form.addEventListener("submit", function(e){
         inputs[1].parentElement.lastElementChild.innerHTML = "Champ obligatoire"
         e.preventDefault()
     }
-    if((inputs[2].value.length <= 0) || ((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value)))) { // Vérifier que c'est un email
+    if((inputs[2].value.length <= 0) || verifMail(inputs[2].value)) { // Vérifier que c'est un email
         inputs[2].classList.add('error')
         inputs[2].parentElement.lastElementChild.innerHTML = "Entrez une adresse mail valide"
         e.preventDefault()
@@ -50,3 +49,8 @@ form.addEventListener("submit", function(e){
         e.preventDefault()
     }
 })
+
+function verifMail(mail){
+    var regexMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return !regexMail.test(mail)
+}

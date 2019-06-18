@@ -43,7 +43,7 @@ class CandideCollectionItemAdministrator extends CandideCollectionItem {
 
     public function getFields() {
         foreach ($this->_fullStructure as $key => $value){
-            $data = (key_exists($key,$this->_fullData)) ? $this->_fullData[$key]['data'] : "";
+            $data = (key_exists($key,$this->_fullData) && key_exists('data',$this->_fullData[$key])) ? $this->_fullData[$key]['data'] : "";
             echo $this->getField($key,$value["type"],$data,$value);
         }
     }
@@ -81,15 +81,19 @@ class CandideCollectionItemAdministrator extends CandideCollectionItem {
     private function setImages(Array $files){
         foreach ($files as $key => $file) {
             if ($file["size"] != 0) {
-                //echo $key." item edited";
                 if (!file_exists(self::FILES_DIRECTORY.$this->getPage()."/".$this->_id)) {
                     mkdir(self::FILES_DIRECTORY.$this->getPage()."/".$this->_id,0777,true);
                 }
-                $name = $key."_".time().$file["name"];
+                $fileName = preg_replace("[^a-zA-Z0-9]", "", $file["name"]);
+                $name = $key."_".time().$fileName;
                 // Resize de l'image
                 $img = $this->resize($file["tmp_name"],$this->_fullStructure[$key]['width'],$this->_fullStructure[$key]['height']);
                 // Enregistrer l'image dans un dossier
-                imagejpeg($img, self::FILES_DIRECTORY.$this->getPage()."/".$this->_id."/".$name, 100);
+                if ($img[1] == "png") {
+                    imagepng($img[0], self::FILES_DIRECTORY.$this->getPage()."/".$this->_id."/".$name);
+                } else {
+                    imagejpeg($img[0], self::FILES_DIRECTORY.$this->getPage()."/".$this->_id."/".$name, 100);
+                }
                 // Editer l'url de l'image
                 $this->_data[$key]['data'] = "/CandideData/files/".$this->getPage()."/".$this->_id."/".$name;
             }

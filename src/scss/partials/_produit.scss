@@ -1,25 +1,25 @@
-#part__container{
+.part__container{
     padding: 26px 110px;
     background-image: url("../../../assets/images/vagues/vague_formations.svg");
     background-position: center 12vh;
     background-size: 100% auto;
     background-repeat: no-repeat;
     
-    #part__displayContainer{
+    .part__displayContainer{
         display: flex;
         justify-content: space-around;
         align-items: center;
 
-        #part__leftCont{
+        .part__leftCont{
             width: 36vw;
             text-align: right;
         }
     }
-    #part__sliderCont{
+    .part__sliderCont{
         position: relative;
         margin: 110px 0;
         height: 20vw;
-         #part__slider{
+         .part__slider{
              display: flex;
              flex-direction: row;
              justify-content: space-between;
@@ -51,9 +51,9 @@
         }
     }
 
-    #part__partners{
+    .part__partners{
     
-        #part__squareCont{
+        .part__squareCont{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -75,7 +75,7 @@
 
         }
     }
-    #part__contact{
+    .part__contact{
         width: 100%;
         display: flex;
         justify-content: center;

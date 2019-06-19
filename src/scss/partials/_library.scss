@@ -14,6 +14,18 @@
     }
 }
 
+.comingFadeFormationAskQuotation{
+    animation: fadeFormationAskQuotation 2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+@keyframes fadeFormationAskQuotation{
+    0%{
+        transform: translateY(10vh);
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+}
 //PRIMARY BUTTON
 a.primaryButton, button.primaryButton {
     outline: none;

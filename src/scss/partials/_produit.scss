@@ -37,6 +37,9 @@
                      width: 130px;
                      transform: translate(-1.2vw,-1.2vw);
                      background: none;
+                     background-color: $background-color;
+                     padding: 10px;
+                     box-sizing: border-box;
                   }
             
                  p{

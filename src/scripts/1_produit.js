@@ -1,32 +1,26 @@
-// récupérer la width totale de #part__slider
-var slider = document.querySelector('#part__slider')
-if (slider != null) {
-    var sliderWidth = slider.offsetWidth
+class Slider{
+    constructor(slider){
+        this.slider = slider
+        this.setVariables()
 
-// récupérer la width de l'écran de l'utilisateur
-var screenWidth = window.innerWidth - 220
+    }
+    setVariables(){
+        this.sliderWidth = this.slider.offsetWidth
+        this.screenWidth = window.innerWidth - 220
+        this.prctSlider = (this.sliderWidth / this.screenWidth) * 100
+        this.offScreen = this.prctSlider - 100
+    }
+    mouseMove(e){
+        let rapportWidth = (e.clientX / window.innerWidth) * this.offScreen
+        this.slider.style.left = -(rapportWidth)+ "vw"
+    }
+}
 
-// Determiner la taille en vw de #part_slider
-var prctSlider = (sliderWidth / screenWidth) * 100
-
-// Déterminer la taille qui dépasse en vw
-var offScreen = prctSlider - 100
-
-
-
-// Detecter le mouvement de la souris sur la div #part__sliderCont
+var sliderElem = document.querySelector('.part__slider')
+if (sliderElem != null) {
+    var slider = new Slider(sliderElem)
     window.onmousemove = function(e){
-        let rapportWidth = (e.clientX / window.innerWidth) * offScreen
-        slider.style.left = -(rapportWidth)+ "vw"
+        slider.mouseMove(e)
     }
-    // selon la pos x de ta souris
-    // Calculer sa position en pourcentage de la width de l'écran
-    // appliquer à #part_slider.style.left la valeur -x vw
-    window.onresize = function(){
-         sliderWidth = slider.offsetWidth
-         screenWidth = window.innerWidth - 220
-         prctSlider = (sliderWidth / screenWidth) * 100
-         offScreen = prctSlider - 100
-
-    }
+    window.onresize = slider.setVariables()
 }

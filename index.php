@@ -8,10 +8,10 @@
 
     <meta name="description" content="EO Sécurité situé à Witry les Reims conseille les entreprises dans tous les domaines d'activités grâce à des formations afin de protéger et équiper leurs salariés. L'entreprise EO Sécurité vous propose donc des produits pour avoir des équipements adaptés, des services pour simplifier la gestion de votre entreprise ainsi que des formations.">
     <!-- Balises réseaux sociaux -->
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://eosecurite.com/assets/images/logo/logo.png">
     <meta property="og:title" content="EO Sécurité">
     <meta property="og:description" content="EO Sécurité situé à Witry les Reims conseille les entreprises dans tous les domaines d'activités grâce à des formations afin de protéger et équiper leurs salariés. L'entreprise EO Sécurité vous propose donc des produits pour avoir des équipements adaptés, des services pour simplifier la gestion de votre entreprise ainsi que des formations.">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://eosecurite.com/assets/images/logo/logo.png">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="EO Sécurité Witry les Reims">
     <meta property="og:type" content="website">

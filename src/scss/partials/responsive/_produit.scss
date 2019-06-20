@@ -1,23 +1,23 @@
-#part__container{
+.part__container{
     background-image: none;
     padding: 26px 26px;
-    #part__displayContainer{
+    .part__displayContainer{
         display: flex;
         flex-direction: column;
         img{
             width: 100%;
         }
-        #part__leftCont{
+        .part__leftCont{
             width: 87vw;
             text-align: left;
         }
         
     }
-    #part__sliderCont{
+    .part__sliderCont{
         height: auto;
         margin: 42px 0;
 
-        #part__slider{
+        .part__slider{
             width: 100%;
             position: static;
             flex-direction: row;
@@ -42,9 +42,9 @@
     }
    
 
-    #part__partners{
+    .part__partners{
 
-        #part__squareCont{
+        .part__squareCont{
             flex-direction: row;
             flex-wrap: wrap;
             margin-bottom: 0;

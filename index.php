@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>EO Sécurité</title>
+    <title>EO Sécurité - <?php include 'php/rooterTitle.php' ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="EO Sécurité situé à Witry les Reims conseille les entreprises dans tous les domaines d'activités grâce à des formations afin de protéger et équiper leurs salariés. L'entreprise EO Sécurité vous propose donc des produits pour avoir des équipements adaptés, des services pour simplifier la gestion de votre entreprise ainsi que des formations.">

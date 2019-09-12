@@ -1,25 +1,25 @@
 <?php
-$c = new CandidePage('produits_et_partenaires');
-$c1 = new CandideCollection('produits');
+$c[0] = new CandidePage('produits_et_partenaires');
+$c[1] = new CandideCollection('produits');
 ?>
 <main class="comingFade part__container">
     <h1>Les partenaires et les produits proposés par EO Sécurité, Reims</h1>
     <section class="part__displayContainer">
         <div class="part__leftCont">
-            <h2><?php $c->text('titres_page_produits'); ?></h2>
-            <p><?php $c->text('description_page_produits'); ?></p>
+            <h2><?php $c[0]->text('titres_page_produits'); ?></h2>
+            <p><?php $c[0]->text('description_page_produits'); ?></p>
         </div>
-        <img src="<?php $c->image('image_page_produit',[500,360]) ?>" alt="image_page_produit" id="part__rightDisplay">
+        <img src="<?php $c[0]->image('image_page_produit',[500,360]) ?>" alt="image_page_produit" id="part__rightDisplay">
     </section>
     <section class="part__sliderCont">
         <div class="part__slider">
 
             <?php
-                foreach ($c1->avalaibleItemIds() as $id) {
+                foreach ($c[1]->avalaibleItemIds() as $id) {
             ?>
                 <div class="part__cards">
-                     <img src="<?php $c1->image('image_du_produit',$id,[130,130]) ?>" alt="image_du_produit">
-                    <p><?php $c1->text('nom_du_produit',$id); ?></p>
+                     <img src="<?php $c[1]->image('image_du_produit',$id,[130,130]) ?>" alt="image_du_produit">
+                    <p><?php $c[1]->text('nom_du_produit',$id); ?></p>
                 </div>
                 <?php
                 }

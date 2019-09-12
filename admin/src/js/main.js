@@ -1,91 +1,152 @@
-const content = document.querySelector("#content")
-const navLinks = document.querySelectorAll("#navLinks li a")
-const header = document.querySelector("#header")
-let trixFilesToDelete = [], trixEditorsChanges = 0
+let wysiwygFilesToDelete = []
 
-function loadContent(url, callback) {
-    trixEditorsChanges = 0
-    console.log(url)
-    fetch(url)
-        .then(function (response) {
-            return response.text()
-        }).then(function(html) {
-        content.innerHTML = html
-        callback()
-    })
+function manageImageDeletionInWysiwyg(oldHtml, newHtml){
+    let oldParts = oldHtml.split('<img src="'),
+        newParts = newHtml.split('<img src="')
+    if (oldParts.length > newParts.length) {
+        for (let i = 0; i < oldParts.length; i++) {
+            if ( i == oldParts.length - 1 || oldParts[i].indexOf('">') != newParts[i].indexOf('">')) {
+                let endIndex = oldParts[i].indexOf('">')
+                wysiwygFilesToDelete.push(oldParts[i].substring(0,endIndex))
+                break
+            }
+        }
+    }
 }
 
-header.addEventListener('click',function (e) {
-    e.preventDefault()
-    loadContent("pages/home.php",setHome)
-})
-
-for (let i = 0; i < navLinks.length; i++){
-    navLinks[i].addEventListener('click',function (e) {
-        e.preventDefault()
-        let pageName = navLinks[i].getAttribute("href").substring(1);
-        switch (navLinks[i].getAttribute("data-type")) {
-            case "page":
-                loadContent("pages/editPage.php?page="+pageName,setEditPage)
-                break
-            case "collection":
-                loadContent("pages/editCollection.php?page="+pageName,setEditCollection)
-                break
-        }
+function setPellEditorFor(input){
+    let pellEditor = input.querySelector('.pell'),
+        output = input.querySelector('.wysiwyg-output')
+    pell.init({
+        element: pellEditor,
+        onChange: html => {
+            manageImageDeletionInWysiwyg(output.value,html)
+            output.value = html
+            submitContainer.classList.add('clickable')
+        },
+        defaultParagraphSeparator: 'p',
+        actions: [
+            { name: 'heading1', icon: 'H1' },
+            { name: 'heading2', icon: 'H2' },
+            { name: 'paragraph', icon: 'P' },
+            { name: 'quote', icon: '“ ”' },
+            { name: 'bold', icon:"<strong>B</strong>"},
+            { name: 'olist', icon: '1.' },
+            { name: 'ulist', icon: '•' },
+            { name: 'link', icon: '🔗' },
+            {
+                name: 'Photo',
+                icon: '📷',
+                title: 'Insert a photo',
+                result: () => input.querySelector('.pell-file-input').click()
+                },
+        ]
     })
+    pellEditor.querySelector('.pell-content').innerHTML = output.value
+}
+
+function manageClassicImageInputEdition(input){
+    let img = document.querySelector('#image_'+input.getAttribute('name'))
+    let width = img.parentElement.offsetWidth
+    let height = img.parentElement.offsetHeight
+    img.onload = function(){
+        if ( height/width > this.naturalHeight/this.naturalWidth ) {
+            img.classList.add('fullHeight')
+            img.classList.remove('fullWidth')
+        } else {
+            img.classList.remove('fullHeight')
+            img.classList.add('fullWidth')
+        }
+    }
+    let fr = new FileReader
+    fr.onload = (e) => img.src = e.target.result
+    fr.readAsDataURL(input.files[0])
+    submitContainer.classList.add('clickable')
+}
+
+function manageWysiwygImageInputEdition(input){
+    if (input.files[0] != null) {
+        input.parentElement.querySelector('.pell-content').focus()
+        uploadFile(input.files[0], (url) => {
+            input.parentElement.querySelector('.pell-content').focus()
+            document.execCommand('insertImage', false, url)
+            submitContainer.classList.add('clickable')
+        })
+    }
+}
+
+function uploadFile(file, successCallback) {
+    let pageName = document.querySelector('#pageName').getAttribute('data-url')
+    let formData = new FormData()
+    formData.append("file", file)
+    formData.append("destination","files/"+pageName)
+    fetch("php/actions/savePictureForWysiwyg.php", {
+        method: 'POST',
+        body: formData
+    }).then(function (response) {
+        return response.text()
+    }).then(function (text) {
+        successCallback(text)
+    })
+
 }
 
 let updateAdminPlatform
 function setHome(){
     updateAdminPlatform = document.querySelector('#updateAdminPlatform')
-    updateAdminPlatform.addEventListener('click',function (e) {
-        e.preventDefault()
-        fetch("updateAdminPlatform.php")
-            .then(function (response) {
-                return response.text()
-            })
-            .then(function (text) {
-                console.log(text)
-                window.location.reload()
-            })
-    })
+    if (updateAdminPlatform != null) {
+        updateAdminPlatform.addEventListener('click',function (e) {
+            e.preventDefault()
+            fetch("updateAdminPlatform.php")
+                .then(function (response) {
+                    return response.text()
+                })
+                .then(function (text) {
+                    console.log(text)
+                    window.location.reload()
+                })
+        })
+    }
 }
 
-let textareas, filesInput, submitContainer
+function getFormData(form){
+    let formData  = new FormData(form)
+    formData.append("wysiwygFilesToDelete",JSON.stringify(wysiwygFilesToDelete))
+    wysiwygFilesToDelete = []
+    return formData
+}
+let textareas, filesInput, numberInputs, submitContainer
 function setForm() {
-    textareas = document.querySelectorAll('textarea')
-    filesInput = document.querySelectorAll('input[type="file"]')
     submitContainer = document.querySelector('.submitContainer')
-    for (let i = 0; i < textareas.length; i++) {
-        textareas[i].style.height = (textareas[i].scrollHeight) + 'px'
-        textareas[i].addEventListener('input',function () {
+    textareas = document.querySelectorAll('textarea')
+    textareas.forEach(textarea => {
+        textarea.style.height = (textarea.scrollHeight) + 'px'
+        textarea.addEventListener('input',function () {
             this.style.height = 'auto';
             this.style.height = (this.scrollHeight) + 'px';
             submitContainer.classList.add('clickable')
         })
-    }
-    for (let i = 0; i < filesInput.length ; i++) {
-        filesInput[i].addEventListener('change',function () {
-            let img = document.querySelector('#image_'+this.getAttribute('name'))
-            let width = img.parentElement.offsetWidth
-            let height = img.parentElement.offsetHeight
-            img.onload = function(){
-                if ( height/width > this.naturalHeight/this.naturalWidth ) {
-                    img.classList.add('fullHeight')
-                    img.classList.remove('fullWidth')
-                } else {
-                    img.classList.remove('fullHeight')
-                    img.classList.add('fullWidth')
-                }
+    })
+    wysiwygInputs = document.querySelectorAll('.pell-input-box')
+    wysiwygInputs.forEach(input => {
+        setPellEditorFor(input)
+    })
+    numberInputs = document.querySelectorAll('input[name^=number_]')
+    numberInputs.forEach(numberInput => {
+        numberInput.addEventListener('input',function(){
+            if (isNaN(this.value)) {
+                this.value = this.value.replace(",",".")
+                this.value = this.value.replace(/[^\d\.]+/g,"")
             }
-            let fr = new FileReader
-            fr.onload = (e) => {
-                img.src = e.target.result
-            }
-            fr.readAsDataURL(this.files[0])
             submitContainer.classList.add('clickable')
-        })
-    }
+        })  
+    })
+    filesInput = document.querySelectorAll('input[type="file"]')
+    filesInput.forEach(input => {
+        input.addEventListener('change',function () {
+            input.classList.contains('classic-image-input') ? manageClassicImageInputEdition(this) : manageWysiwygImageInputEdition(this)
+        })  
+    })
 }
 
 let editPageForm
@@ -94,48 +155,32 @@ function setEditPage() {
     editPageForm.addEventListener('submit',function (e) {
         e.preventDefault()
         submitContainer.classList.add('loading')
-        let formData  = new FormData(this);
-        formData.append("trixFilesToDelete",JSON.stringify(trixFilesToDelete))
-        trixFilesToDelete = []
         fetch(this.getAttribute('action'), {
             method: 'POST',
-            body: formData
-        }).then(function (response) {
+            body: getFormData(this)
+        })
+        .then(function (response) {
             submitContainer.classList.remove('loading')
             if (response.status == 200){
                 submitContainer.classList.remove('clickable')
             }
             return response.text()
-        }).then(function (text) {
+        })
+        .then(function (text) {
             console.log(text)
         });
     })
     setForm()
 }
 
-let newElementButton, editCollectionItemButtons, deleteCollectionItemButtons
+let deleteCollectionItemButtons
 function setEditCollection() {
-    newElementButton = document.querySelector('#newElement')
-    newElementButton.addEventListener('click',function (e) {
-        e.preventDefault()
-        let pageName = this.getAttribute("href").substring(1);
-        loadContent('pages/editCollectionItem.php?page='+pageName+'&id=newItem',setEditCollectionItem)
-    })
-    editCollectionItemButtons = document.querySelectorAll('.editButton')
-    for (let i = 0; i < editCollectionItemButtons.length; i++) {
-        editCollectionItemButtons[i].addEventListener('click',function (e) {
-            e.preventDefault()
-            let pageName = newElementButton.getAttribute("href").substring(1);
-            let id = this.getAttribute("href").substring(1);
-            loadContent('pages/editCollectionItem.php?page='+pageName+'&id='+id,setEditCollectionItem)
-        })
-    }
     deleteCollectionItemButtons = document.querySelectorAll('.deleteButton')
-    for (let i = 0; i < deleteCollectionItemButtons.length; i++) {
-        deleteCollectionItemButtons[i].addEventListener('click',function (e) {
+    deleteCollectionItemButtons.forEach(button => {
+        button.addEventListener('click',function (e) {
             e.preventDefault()
             if (window.confirm("Voulez vous vraiment supprimer cet élément ?")){
-                let container = deleteCollectionItemButtons[i].parentNode
+                let container = button.parentNode
                 container.classList.add("waiting")
                 fetch(this.getAttribute('href'))
                     .then(function (response) {
@@ -146,43 +191,41 @@ function setEditCollection() {
                         }
                     })
             }
-        })
-    }
+        })  
+    })
 }
 
-let backButton, editCollectionItemForm
+let editCollectionItemForm
 function setEditCollectionItem() {
-    backButton = document.querySelector('#backButton')
-    backButton.addEventListener('click',function (e) {
-        e.preventDefault()
-        let pageName = this.getAttribute("href").substring(1);
-        loadContent("pages/editCollection.php?page="+pageName,setEditCollection)
-    })
     editCollectionItemForm = document.querySelector("#editCollectionItemForm");
     editCollectionItemForm.addEventListener('submit',function (e) {
         e.preventDefault()
         submitContainer.classList.add('loading')
-        let formData  = new FormData(this);
-        formData.append("trixFilesToDelete",trixFilesToDelete)
         fetch(this.getAttribute('action'), {
             method: 'POST',
-            body: formData
+            body: getFormData(this)
         }).then(function (response) {
             submitContainer.classList.remove('loading')
             if (response.status == 200){
                 submitContainer.classList.remove('clickable')
             }
             return response.text()
-        }).then(function (text) {
-            console.log(text)
+        }).then(function (id) {
             if (editCollectionItemForm.getAttribute("data-id") == "newItem"){
-                let pageName = backButton.getAttribute("href").substring(1);
-                let id = text
-                loadContent('pages/editCollectionItem.php?page='+pageName+'&id='+id,setEditCollectionItem)
+                let pageName = editCollectionItemForm.getAttribute("data-page")
+                window.location.href= "editCollectionItem?page="+pageName+"&id="+id
             }
         });
     })
     setForm()
 }
 
-setHome()
+if (document.URL.indexOf("editPage") != -1){
+    setEditPage()
+} else if (document.URL.indexOf("editCollectionItem") != -1){
+    setEditCollectionItem()
+} else if (document.URL.indexOf("editCollection") != -1){
+    setEditCollection()
+} else {
+    setHome()
+}

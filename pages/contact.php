@@ -46,6 +46,7 @@ $c = new CandidePage('contact');
                         <label for="scales">Je certifie représenter une entreprise et non un particulier</label>
                     </div>
             </div>
+            <input type="hidden" name="cellphonechbt">
             <div class="primaryButton contactContainer__section__rightdiv__button">
                 <button class="primaryButton contactContainer__section__rightdiv__button">Envoyer</button>
             </div>

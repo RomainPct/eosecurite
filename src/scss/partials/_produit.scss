@@ -63,12 +63,10 @@
             
         }
         .part__partnersSquare{
-
             width: 10vw;
             height: 10vw;
-            display: flex;
-            align-items: center;
-            margin-bottom: 26px;
+            margin: 0 3vw 26px;
+            // margin-bottom: 26px;
             img{
                 max-width: 100%;
             }
